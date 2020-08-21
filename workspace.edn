@@ -1,6 +1,6 @@
 {:assets 
-{}
- :current-tab 0
+{"assets/423385__crazymonke9__simple-kalimba-loop-on-120-bpm.wav" :bundled}
+ :current-tab 1
  :manifest 
 {:dependencies 
 {}
@@ -9,4 +9,4 @@
  :name "delay-effects"
  :url "https://kronoslang.io"
  :version "0.1"}
- :tabs ("tabs/draft.initial.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn" "tabs/My-Fractional-Delay.n72034wr55mevzf.edn")}
+ :tabs ("tabs/draft.initial.edn" "tabs/Echoes.y1ei2gd9e1g6hs9.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn" "tabs/My-Fractional-Delay.n72034wr55mevzf.edn" "tabs/Sound-Example.1spx6qoohvtr5ri.edn")}

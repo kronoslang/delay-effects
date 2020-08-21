@@ -11,6 +11,17 @@ Brief() {
 }
 
 
+Echoes() {
+(nnloqgm0p14lm1rx-0) = (delay) => ( My-Static-Delay(ncwz5tcyqgpb0dyl-0 delay n9dbg51533owz15e-0) ) 
+(ndzv7rnpu96p68qo-0) = Algorithm:Map(nnloqgm0p14lm1rx-0 n0x0i10khlqtfawj-0 )
+(n1now9r55ea4ats-0) = n73t603k8yqdoxid-0
+(ncwz5tcyqgpb0dyl-0) = Sound-Example()
+(n9dbg51533owz15e-0) = 0.9
+(n73t603k8yqdoxid-0) = Average(ncwz5tcyqgpb0dyl-0 ndzv7rnpu96p68qo-0 )
+(n0x0i10khlqtfawj-0) = [#1234 #2345 #3456 #4567 #5678 #6789]
+n1now9r55ea4ats-0
+}
+
 My-Static-Delay(sig delay feedback) {
 ;; Delays `sig` by a number of activation `frames`. The output is fed back and added to the input, multiplied by the `feedback` coefficient.
 (nc9i0xdm15546sw3-0 nc9i0xdm15546sw3-1 nc9i0xdm15546sw3-2) = arg
@@ -40,6 +51,18 @@ My-Fractional-Delay(sig delay max feedback) {
 (nbt33alb77zrphl-0) = Function:Wrap-Hermite(nws5victi1d5r7kl-0)
 (ndxhjy8kra99akoa-0) = Eval(nbt33alb77zrphl-0 nz7w3oldw6glzdha-0 )
 n7kqm3m2tbf3mrqe-0
+}
+
+Sound-Example() {
+(n851x0kz111qi6wl-0) = Filter:Integrate(n4xe5f8gl6hreckz-0 nmqe1sol43v62eut-0)
+(nmqe1sol43v62eut-0) = 1
+(n7jk5e0hy1269807-0 n7jk5e0hy1269807-1 n7jk5e0hy1269807-2) = :Audio:Loop("423385__crazymonke9__simple-kalimba-loop-on-120-bpm.wav")
+(ncyyp7rug1y3ewzd-0) = Eval(n4beb79kp2d9o93j-0 n851x0kz111qi6wl-0 )
+(n4xe5f8gl6hreckz-0) = Gen:Signal(n6ccadr7e7s9rvc6-0)
+(nmlbeoh9gq1lntsy-0) = Gen:Rate()
+(n6ccadr7e7s9rvc6-0) = (nmlbeoh9gq1lntsy-0 / n7jk5e0hy1269807-0)
+(n4beb79kp2d9o93j-0) = Function:Wrap-Hermite(n7jk5e0hy1269807-2)
+ncyyp7rug1y3ewzd-0
 }
 
 }
