@@ -1,0 +1,132 @@
+{:draft-argument "0 20 #3000 0"
+ :identifier "My-Fractional-Delay"
+ :identity "n72034wr55mevzf"
+ :patch
+{:cables
+{["7kqm3m2tbf3mrqe" 0] [:fixed "dxhjy8kra99akoa" 0]
+ ["b7e1ejxrzqa1qb3" 0] [:fixed "6fw1gtqvtojcsv7" 0]
+ ["b7e1ejxrzqa1qb3" 1] [:fixed "nbtad9inbolz9wt" 0]
+ ["bt33alb77zrphl" 0] [:fixed "ws5victi1d5r7kl" 0]
+ ["dxhjy8kra99akoa" 0] [:fixed "bt33alb77zrphl" 0]
+ ["dxhjy8kra99akoa" 1] [:fixed "z7w3oldw6glzdha" 0]
+ ["eakwoh54fbqddfe" 0] [:fixed "6fw1gtqvtojcsv7" 2]
+ ["j50paefplo71qe6" 0] [:fixed "4fm2mcl0wjtq3ev" 0]
+ ["j50paefplo71qe6" 1] [:fixed "eakwoh54fbqddfe" 0]
+ ["j50paefplo71qe6" 2] [:fixed "b7e1ejxrzqa1qb3" 0]
+ ["nbtad9inbolz9wt" 0] [:fixed "dxhjy8kra99akoa" 0]
+ ["nbtad9inbolz9wt" 1] [:fixed "6fw1gtqvtojcsv7" 3]
+ ["ws5victi1d5r7kl" 0] [:fixed "j50paefplo71qe6" 0]
+ ["z7w3oldw6glzdha" 0] [:fixed "j50paefplo71qe6" 2]
+ ["z7w3oldw6glzdha" 1] [:fixed "6fw1gtqvtojcsv7" 1]}
+ :nodes
+{"43dt279n605hwt6" 
+{:inputs []
+ :label ";# Fractional Delay #\n\nIf we are actually going to modulate the delay time and preserve the integrity of the audio flowing through the ring buffer, we need to not only read at arbitrary buffer locations, but also *between* them. \n\n\n\nFor that, we need [interpolation](https://ccrma.stanford.edu/~jos/pasp/Theory_Ideal_Bandlimited_Interpolation.html)."
+ :outputs []
+ :parsed [:comment "# Fractional Delay #\n\nIf we are actually going to modulate the delay time and preserve the integrity of the audio flowing through the ring buffer, we need to not only read at arbitrary buffer locations, but also *between* them. \n\n\n\nFor that, we need [interpolation](https://ccrma.stanford.edu/~jos/pasp/Theory_Ideal_Bandlimited_Interpolation.html)."]
+ :pos [144 -298]
+ }
+ "4fm2mcl0wjtq3ev" 
+{:inputs []
+ :label "#0"
+ :outputs [""]
+ :parsed [:invariant "0"]
+ :pos [-170 103]
+ }
+ "5hrkg4pnvmitubu" 
+{:color 2
+ :inputs []
+ :label "; `Select-Wrap` here is *partially applied* - there is no connection to the index inlet. That makes a functional abstraction of the buffer read head, parametrized by read location."
+ :outputs []
+ :parsed [:comment "`Select-Wrap` here is *partially applied* - there is no connection to the index inlet. That makes a functional abstraction of the buffer read head, parametrized by read location."]
+ :pos [-204 281]
+ }
+ "6fw1gtqvtojcsv7" 
+{:color 0
+ :inputs []
+ :label "(sig delay max feedback) = arg"
+ :outputs ["sig" "delay" "max" "feedback"]
+ :parsed "arg"
+ :pos [-405 -139]
+ }
+ "6l4yhf88isay2sh" 
+{:color 3
+ :inputs []
+ :label "; `Wrap-Hermite` adds interpolation to any function, reading 4 locations of the source function to produce a smooth polynomial waveform that goes through them."
+ :outputs []
+ :parsed [:comment "`Wrap-Hermite` adds interpolation to any function, reading 4 locations of the source function to produce a smooth polynomial waveform that goes through them."]
+ :pos [279 306]
+ }
+ "7kqm3m2tbf3mrqe" 
+{:inputs ["out"]
+ :label "$out"
+ :outputs [""]
+ :parsed [:free-var "out"]
+ :pos [482 237]
+ }
+ "b7e1ejxrzqa1qb3" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-105 8]
+ }
+ "bt33alb77zrphl" 
+{:color 3
+ :inputs ["fn"]
+ :label "Function:Wrap-Hermite($fn)"
+ :outputs [""]
+ :parsed [:fn "Function:Wrap-Hermite" [:tuple [:free-var "fn"]]]
+ :pos [187 228]
+ }
+ "dxhjy8kra99akoa" 
+{:ephemeral-inputs #{"arg"}
+ :inputs ["fn" "arg" "arg..."]
+ :label "Eval($fn $arg...)"
+ :outputs [""]
+ :parsed [:fn "Eval" [:tuple [:free-var "fn"] [:free-var "arg"] [:free-var "arg..."]]]
+ :pos [335 200]
+ }
+ "eakwoh54fbqddfe" 
+{:inputs ["a"]
+ :label "Constraints:Constant!($a)"
+ :name "ring buffer size"
+ :outputs [""]
+ :parsed [:fn "Constraints:Constant!" [:tuple [:free-var "a"]]]
+ :pos [-260 38]
+ }
+ "j50paefplo71qe6" 
+{:inputs ["init" "order" "sig~"]
+ :label "rcsbuf($init $order $sig~)"
+ :name "low-level ring buffer"
+ :outputs ["" "" ""]
+ :parsed [:fn "rcsbuf" [:tuple [:free-var "init"] [:free-var "order"] [:free-var "sig~"]]]
+ :pos [-79 91]
+ }
+ "nbtad9inbolz9wt" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :name "feedback"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [414 147]
+ }
+ "ws5victi1d5r7kl" 
+{:color 2
+ :inputs ["vector" "index"]
+ :label "Select-Wrap($vector $index)"
+ :name ""
+ :outputs [""]
+ :parsed [:fn "Select-Wrap" [:tuple [:free-var "vector"] [:free-var "index"]]]
+ :pos [2 228]
+ }
+ "z7w3oldw6glzdha" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
+ :name "read head"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [116 123]
+ }}
+ :scale 1
+ :scroll [0 0]}}

@@ -27,4 +27,19 @@ My-Dynamic-Delay(sig delay max feedback) {
 
 }
 
+My-Fractional-Delay(sig delay max feedback) {
+(n7kqm3m2tbf3mrqe-0) = ndxhjy8kra99akoa-0
+(neakwoh54fbqddfe-0) = Constraints:Constant!(n6fw1gtqvtojcsv7-2)
+(nj50paefplo71qe6-0 nj50paefplo71qe6-1 nj50paefplo71qe6-2) = rcsbuf(n4fm2mcl0wjtq3ev-0 neakwoh54fbqddfe-0 nb7e1ejxrzqa1qb3-0)
+(n4fm2mcl0wjtq3ev-0) = #0
+(nnbtad9inbolz9wt-0) = (ndxhjy8kra99akoa-0 * n6fw1gtqvtojcsv7-3)
+(nws5victi1d5r7kl-0) = (index) => ( Select-Wrap(nj50paefplo71qe6-0 index) ) 
+(nz7w3oldw6glzdha-0) = (nj50paefplo71qe6-2 - n6fw1gtqvtojcsv7-1)
+(nb7e1ejxrzqa1qb3-0) = (n6fw1gtqvtojcsv7-0 + nnbtad9inbolz9wt-0)
+(n6fw1gtqvtojcsv7-0 n6fw1gtqvtojcsv7-1 n6fw1gtqvtojcsv7-2 n6fw1gtqvtojcsv7-3) = arg
+(nbt33alb77zrphl-0) = Function:Wrap-Hermite(nws5victi1d5r7kl-0)
+(ndxhjy8kra99akoa-0) = Eval(nbt33alb77zrphl-0 nz7w3oldw6glzdha-0 )
+n7kqm3m2tbf3mrqe-0
+}
+
 }

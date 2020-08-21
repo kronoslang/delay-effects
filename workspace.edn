@@ -1,6 +1,6 @@
 {:assets 
 {}
- :current-tab 2
+ :current-tab 0
  :manifest 
 {:dependencies 
 {}
@@ -9,4 +9,4 @@
  :name "delay-effects"
  :url "https://kronoslang.io"
  :version "0.1"}
- :tabs ("tabs/draft.initial.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn")}
+ :tabs ("tabs/draft.initial.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn" "tabs/My-Fractional-Delay.n72034wr55mevzf.edn")}
