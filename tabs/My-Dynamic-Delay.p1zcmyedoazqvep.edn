@@ -1,0 +1,101 @@
+{:draft-argument "Gen:Sin(440) 450 + Gen:Sin(5) * 400 #1000 0.1"
+ :identifier "My-Dynamic-Delay"
+ :identity "p1zcmyedoazqvep"
+ :patch
+{:cables
+{["8qg8ls8df1vmigg" 0] [:fixed "743mw2csx0qd1qn" 0]
+ ["8qg8ls8df1vmigg" 1] [:fixed "iu44sa3nx8cvbtx" 0]
+ ["8qg8ls8df1vmigg" 2] [:fixed "u8k06ef0xr2d2n7" 0]
+ ["iu44sa3nx8cvbtx" 0] [:fixed "9psoyfa317na6xu" 2]
+ ["omtuxk11yenh6gz" 0] [:fixed "ot23u48iyv34a4w" 0]
+ ["omtuxk11yenh6gz" 1] [:fixed "9psoyfa317na6xu" 3]
+ ["ot23u48iyv34a4w" 0] [:fixed "8qg8ls8df1vmigg" 0]
+ ["ot23u48iyv34a4w" 1] [:fixed "vlcc6m2i97reovs" 0]
+ ["u8k06ef0xr2d2n7" 0] [:fixed "9psoyfa317na6xu" 0]
+ ["u8k06ef0xr2d2n7" 1] [:fixed "omtuxk11yenh6gz" 0]
+ ["vlcc6m2i97reovs" 0] [:fixed "8qg8ls8df1vmigg" 2]
+ ["vlcc6m2i97reovs" 1] [:fixed "9psoyfa317na6xu" 1]}
+ :nodes
+{"743mw2csx0qd1qn" 
+{:inputs []
+ :label "#0"
+ :outputs [""]
+ :parsed [:invariant "0"]
+ :pos [-100 128]
+ }
+ "7xjwjg48b02c4bu" 
+{:inputs []
+ :label ";# Dynamic Delay #\n\n\nTo make a dynamically adjustable delay, we must decouple ring buffer size from the delay length.\n\n\nHere, instead of using the sample evicted from the buffer, we are going to read from the buffer at a specific location."
+ :outputs []
+ :parsed [:comment "# Dynamic Delay #\n\n\nTo make a dynamically adjustable delay, we must decouple ring buffer size from the delay length.\n\n\nHere, instead of using the sample evicted from the buffer, we are going to read from the buffer at a specific location."]
+ :pos [203 -294]
+ }
+ "8qg8ls8df1vmigg" 
+{:inputs ["init" "order" "sig~"]
+ :label "rcsbuf($init $order $sig~)"
+ :name "low-level ring buffer"
+ :outputs ["" "" ""]
+ :parsed [:fn "rcsbuf" [:tuple [:free-var "init"] [:free-var "order"] [:free-var "sig~"]]]
+ :pos [-9 115]
+ }
+ "9psoyfa317na6xu" 
+{:color 0
+ :inputs []
+ :label "(sig delay max feedback) = arg"
+ :outputs ["sig" "delay" "max" "feedback"]
+ :parsed "arg"
+ :pos [-335 -114]
+ }
+ "hw2zvacvlt8f3ef" 
+{:inputs []
+ :label "; `Select-Wrap` reads an element from a buffer at a specific index. The index is wrapped, making the buffer appear an infinitely repeating cycle, appropriate for a circular buffer!"
+ :outputs []
+ :parsed [:comment "`Select-Wrap` reads an element from a buffer at a specific index. The index is wrapped, making the buffer appear an infinitely repeating cycle, appropriate for a circular buffer!"]
+ :pos [367 234]
+ }
+ "iu44sa3nx8cvbtx" 
+{:inputs ["a"]
+ :label "Constraints:Constant!($a)"
+ :name "ring buffer size"
+ :outputs [""]
+ :parsed [:fn "Constraints:Constant!" [:tuple [:free-var "a"]]]
+ :pos [-190 63]
+ }
+ "omtuxk11yenh6gz" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :name "feedback"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [381 140]
+ }
+ "ot23u48iyv34a4w" 
+{:inputs ["vector" "index"]
+ :label "Select-Wrap($vector $index)"
+ :name ""
+ :outputs [""]
+ :parsed [:fn "Select-Wrap" [:tuple [:free-var "vector"] [:free-var "index"]]]
+ :pos [233 154]
+ }
+ "u8k06ef0xr2d2n7" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-35 33]
+ }
+ "vl1vzn3n6g2uobh" 
+{:inputs []
+ :label "; `rcsbuf` is a rich ring buffer primitive, which has three outputs: the entire buffer contents, the evicted sample, and the current write head position."
+ :outputs []
+ :parsed [:comment "`rcsbuf` is a rich ring buffer primitive, which has three outputs: the entire buffer contents, the evicted sample, and the current write head position."]
+ :pos [-187 234]
+ }
+ "vlcc6m2i97reovs" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
+ :name "read head"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [163 40]
+ }}}}
