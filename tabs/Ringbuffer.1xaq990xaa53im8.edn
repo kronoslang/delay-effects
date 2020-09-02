@@ -72,7 +72,7 @@
  :inputs []
  :label "1 |o 1"
  :outputs [""]
- :parsed [:widget "prutbg" nil {:type :button, :off [:float "1"], :on [:float "1"]}]
+ :parsed [:widget "97bo5m" nil {:type :button, :off [:float "1"], :on [:float "1"]}]
  :pos [-349 1]
  }
  "q7oji0v5y41l1be" 

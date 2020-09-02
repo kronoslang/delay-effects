@@ -55,7 +55,7 @@
  :label "0 .o 1"
  :name "wet and dry"
  :outputs [""]
- :parsed [:widget "mb6sxl" 0.325 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :parsed [:widget "am2db1" 0.325 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
  :pos [203 366]
  }
  "3xbh9u92b05zgcy" 
@@ -176,7 +176,7 @@
  :label "1 .o 8"
  :name "reverb decay time"
  :outputs [""]
- :parsed [:widget "2htbuq" 1 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
+ :parsed [:widget "aypmz7" 1 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
  :pos [-546 -19]
  }
  "ouage71f6p0xcod" 
