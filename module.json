@@ -1,8 +1,8 @@
 {
-  "description": "Various delay effects in the Kronos language explained in detail, using static and dynamic delays to produce echo, reverb, vibrato, chorus and flanger.",
   "dependencies": {},
-  "version": "0.1",
+  "description": "Various delay effects in the Kronos language explained in detail, using static and dynamic delays to produce echo, reverb, vibrato, chorus and flanger.",
   "license": "https://www.eclipse.org/legal/epl-v10.html",
   "name": "delay-effects",
-  "url": "https://kronoslang.io"
+  "url": "https://kronoslang.io",
+  "version": "0.1"
 }
