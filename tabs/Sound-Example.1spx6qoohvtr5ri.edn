@@ -16,54 +16,63 @@
  :label "Function:Wrap-Hermite($fn)"
  :outputs [""]
  :parsed [:fn "Function:Wrap-Hermite" [:tuple [:free-var "fn"]]]
- :pos [-24 107]}
+ :pos [-24 107]
+ }
  "4xe5f8gl6hreckz" 
 {:inputs ["sig"]
  :label "Gen:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Gen:Signal" [:tuple [:free-var "sig"]]]
- :pos [11 -65]}
+ :pos [11 -65]
+ }
  "6ccadr7e7s9rvc6" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-75 -181]}
+ :pos [-75 -181]
+ }
  "7jk5e0hy1269807" 
 {:inputs []
  :label "423385__crazymonke9__simple-kalimba-loop-on-120-bpm.wav"
  :outputs ["sample-rate" "num-frames" "sampler-fn"]
  :parsed [:asset "423385__crazymonke9__simple-kalimba-loop-on-120-bpm.wav"]
- :pos [-373 -50]}
+ :pos [-373 -50]
+ }
  "851x0kz111qi6wl" 
 {:inputs ["sig" "feedback"]
  :label "Filter:Integrate($sig $feedback)"
  :outputs [""]
  :parsed [:fn "Filter:Integrate" [:tuple [:free-var "sig"] [:free-var "feedback"]]]
- :pos [163 -22]}
+ :pos [163 -22]
+ }
  "cyyp7rug1y3ewzd" 
 {:ephemeral-inputs #{"arg"}
  :inputs ["fn" "arg" "arg..."]
  :label "Eval($fn $arg...)"
  :outputs [""]
  :parsed [:fn "Eval" [:tuple [:free-var "fn"] [:free-var "arg"] [:free-var "arg..."]]]
- :pos [280 103]}
+ :pos [280 103]
+ :selected true}
  "e8lexet63a3bfb3" 
 {:inputs []
  :label "; Sample credit: [crazymonke9](https://freesound.org/people/crazymonke9/sounds/423385/)"
  :outputs []
  :parsed [:comment "Sample credit: [crazymonke9](https://freesound.org/people/crazymonke9/sounds/423385/)"]
- :pos [-380 131]}
+ :pos [-380 131]
+ }
  "mlbeoh9gq1lntsy" 
 {:inputs []
  :label "Gen:Rate()"
  :outputs [""]
  :parsed [:fn "Gen:Rate" [:tuple]]
- :pos [-224 -177]}
+ :pos [-224 -177]
+ }
  "mqe1sol43v62eut" 
 {:inputs []
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [63 -153]}}}}
+ :pos [63 -153]
+ }}}}

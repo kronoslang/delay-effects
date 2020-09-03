@@ -25,7 +25,8 @@
  :label "; click here to *drive the ring buffer*"
  :outputs []
  :parsed [:comment "click here to *drive the ring buffer*"]
- :pos [-360 57]}
+ :pos [-360 57]
+ }
  "a6bspw3s9v5ktus" 
 {:color 2
  :inputs ["position"]
@@ -40,21 +41,24 @@
  :name "this is the language primitive"
  :outputs ["" "" ""]
  :parsed [:fn "rcsbuf" [:tuple [:free-var "init"] [:free-var "order"] [:free-var "sig~"]]]
- :pos [29 103]}
+ :pos [29 103]
+ }
  "dpo53heusba2ail" 
 {:inputs []
  :label "0"
  :name "initial value"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-108 164]}
+ :pos [-108 164]
+ }
  "fivsx9jgi1f5q0k" 
 {:inputs ["sig" "feedback"]
  :label "Filter:Integrate($sig $feedback)"
  :name "count button presses"
  :outputs [""]
  :parsed [:fn "Filter:Integrate" [:tuple [:free-var "sig"] [:free-var "feedback"]]]
- :pos [-149 -28]}
+ :pos [-149 -28]
+ }
  "i7h977cdygm9bjp" 
 {:color 2
  :inputs ["evict"]
@@ -68,33 +72,38 @@
  :inputs []
  :label "1 |o 1"
  :outputs [""]
- :parsed [:widget "97bo5m" nil {:type :button, :off [:float "1"], :on [:float "1"]}]
- :pos [-349 1]}
+ :parsed [:widget "-4mbqms" nil {:type :button, :off [:float "1"], :on [:float "1"]}]
+ :pos [-349 1]
+ }
  "q7oji0v5y41l1be" 
 {:inputs []
  :label "#10"
  :name "size of buffer"
  :outputs [""]
  :parsed [:invariant "10"]
- :pos [-86 63]}
+ :pos [-86 63]
+ }
  "qg9nn5be0fw6nsc" 
 {:inputs []
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [-235 -91]}
+ :pos [-235 -91]
+ }
  "u2wsistwzhd8o" 
 {:color 2
  :inputs []
  :label ";## Evaluate here ##\n\n\n`buffer` is the content of the ring buffer\n\n`evict` is the element that was overwritten\n\n`position` shows the index of the write head.\n\n\nSelect any or all of them and press *return* to see output values!"
  :outputs []
  :parsed [:comment "## Evaluate here ##\n\n\n`buffer` is the content of the ring buffer\n\n`evict` is the element that was overwritten\n\n`position` shows the index of the write head.\n\n\nSelect any or all of them and press *return* to see output values!"]
- :pos [260 238]}
+ :pos [260 238]
+ }
  "zh80l4jyopfk3qc" 
 {:inputs []
  :label "; # Low Level Ring Buffer #\n\n\nLearn how Kronos deals with ring buffers!\n\n\nThis patch shows a ring buffer clocked by a *button*, so you can observe the contents of the buffer, evicted frame and the write head position that the language primitive `rcsbuf` offers."
  :outputs []
  :parsed [:comment "# Low Level Ring Buffer #\n\n\nLearn how Kronos deals with ring buffers!\n\n\nThis patch shows a ring buffer clocked by a *button*, so you can observe the contents of the buffer, evicted frame and the write head position that the language primitive `rcsbuf` offers."]
- :pos [207 -297]}}
+ :pos [207 -297]
+ }}
  :scale 1
  :scroll [0 0]}}

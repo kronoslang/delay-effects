@@ -10,4 +10,4 @@
  :name "delay-effects"
  :url "https://kronoslang.io"
  :version "0.1"}
- :tabs ("tabs/draft.initial.edn" "tabs/Echoes.y1ei2gd9e1g6hs9.edn" "tabs/Reverb.9vc2s9lni4bjuq5.edn" "tabs/Ringbuffer.1xaq990xaa53im8.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn" "tabs/My-Fractional-Delay.n72034wr55mevzf.edn" "tabs/Sound-Example.1spx6qoohvtr5ri.edn")}
+ :tabs ("tabs/draft.initial.edn" "tabs/Echoes.y1ei2gd9e1g6hs9.edn" "tabs/Reverb.9vc2s9lni4bjuq5.edn" "tabs/Ringbuffer.1xaq990xaa53im8.edn" "tabs/My-Static-Delay.43jc6kec1uq66p3.edn" "tabs/My-Dynamic-Delay.p1zcmyedoazqvep.edn" "tabs/My-Fractional-Delay.n72034wr55mevzf.edn" "tabs/Allpass-Comb.hsc18718qgowds4.edn" "tabs/Sound-Example.1spx6qoohvtr5ri.edn")}

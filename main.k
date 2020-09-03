@@ -26,20 +26,24 @@ Reverb() {
 (nypz6dk3au5wds-0) = #3
 (n3xbh9u92b05zgcy-0) = Sound-Example()
 (n11teks5w3if5biv-0) = (delay) => ( Math:Pow(0.001 (delay / n44ry10ahemcibi9-0)) ) 
-(nbaalsv3lkdxac25-0) = Math:Mix(n39a0b59qhihx05w-0 n3xbh9u92b05zgcy-0 nhxwaczbsfgz942c-0)
+(nbaalsv3lkdxac25-0) = Math:Mix(n39a0b59qhihx05w-0 n3xbh9u92b05zgcy-0 nb7p0jtwpmxvltrq-0)
 (nbl81erkv158sv3v-0) = #1
 (ncdkph0c1yosl3ib-0) = Algorithm:Expand(nq6131n4womq8vb-0 nh3u1ojrp23975qg-0 n1aa9mxrcduio0tb-0)
-(nie15t2d5rsck9fb-0) = 1
+(nie15t2d5rsck9fb-0) = 0.255
+(nb7p0jtwpmxvltrq-0) = Algorithm:Reduce(n0cyttai86n4f4jc-0 nhxwaczbsfgz942c-0 nl77prq3o38a3k76-0 )
 (na5ec3rbnq200f0n-0) = Algorithm:Map(n11teks5w3if5biv-0 ncdkph0c1yosl3ib-0 )
 (n6t3lwzn34bpdea-0) = (nbl81erkv158sv3v-0 / nq6131n4womq8vb-0)
+(nl77prq3o38a3k76-0) = [#421 #312 #203]
 (nh3u1ojrp23975qg-0) = (a) => ( (a * nouage71f6p0xcod-0) ) 
 (nq6131n4womq8vb-0) = #8
-(n39a0b59qhihx05w-0) = 0.325
+(n39a0b59qhihx05w-0) = 0.6
 (nhxwaczbsfgz942c-0) = Average(ne8zcwkivsj5ebr7-0 )
 (ng2z39u2apec4nn0-0) = (delay feedback) => ( My-Static-Delay(n3xbh9u92b05zgcy-0 delay feedback) ) 
 (n7aihl92sgcayv36-0) = Rate-of(n3xbh9u92b05zgcy-0)
 (n0u0zlmq4ek0px-0) = nbaalsv3lkdxac25-0
 (nouage71f6p0xcod-0) = Math:Pow(nypz6dk3au5wds-0 n6t3lwzn34bpdea-0)
+(nzxh200dfyia1dw8-0) = 0.5
+(n0cyttai86n4f4jc-0) = (sig delay) => ( Allpass-Comb(sig delay nzxh200dfyia1dw8-0) ) 
 (n1aa9mxrcduio0tb-0) = #654
 (ne8zcwkivsj5ebr7-0) = Algorithm:Zip-With(ng2z39u2apec4nn0-0 ncdkph0c1yosl3ib-0 na5ec3rbnq200f0n-0)
 (n44ry10ahemcibi9-0) = (nie15t2d5rsck9fb-0 * n7aihl92sgcayv36-0)
@@ -86,6 +90,17 @@ My-Fractional-Delay(sig delay max feedback) {
 (nbt33alb77zrphl-0) = Function:Wrap-Hermite(nws5victi1d5r7kl-0)
 (ndxhjy8kra99akoa-0) = Eval(nbt33alb77zrphl-0 nz7w3oldw6glzdha-0 )
 n7kqm3m2tbf3mrqe-0
+}
+
+Allpass-Comb(sig delay feedback) {
+(ntiy4mokqjej16x9-0 ntiy4mokqjej16x9-1 ntiy4mokqjej16x9-2) = arg
+(n7163ve4vnm6g1pk-0) = Constraints:Constant!(ntiy4mokqjej16x9-1)
+(nmmfj5c5c121w93e-0) = rbuf(n7163ve4vnm6g1pk-0 n5kj4ucxh7ffl2hw-0)
+(nax4opn23yefni7l-0) = (nmmfj5c5c121w93e-0 + nalzx6eaaqshpd2-0)
+(n5kj4ucxh7ffl2hw-0) = (ntiy4mokqjej16x9-0 - nphk2p3rm2cgfnpl-0)
+(nphk2p3rm2cgfnpl-0) = (nmmfj5c5c121w93e-0 * ntiy4mokqjej16x9-2)
+(nalzx6eaaqshpd2-0) = (n5kj4ucxh7ffl2hw-0 * ntiy4mokqjej16x9-2)
+nax4opn23yefni7l-0
 }
 
 Sound-Example() {
