@@ -46,6 +46,7 @@
 {:color 2
  :inputs []
  :label "#654"
+ :name "shortest time"
  :outputs [""]
  :parsed [:invariant "654"]
  :pos [-88 -272]
@@ -207,15 +208,16 @@
  "x92w4cuid5oz75z" 
 {:color 2
  :inputs []
- :label "; ## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `765` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."
+ :label "; ## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."
  :outputs []
- :parsed [:comment "## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `765` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."]
+ :parsed [:comment "## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."]
  :pos [266 -432]
  }
  "ypz6dk3au5wds" 
 {:color 2
  :inputs []
  :label "#3"
+ :name "delay spread"
  :outputs [""]
  :parsed [:invariant "3"]
  :pos [-221 -227]
