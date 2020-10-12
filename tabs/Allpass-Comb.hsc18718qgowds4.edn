@@ -20,50 +20,43 @@
  :label "; ## Allpass Comb Filter ##\n\n\nComb filters have heavy resonances that exhibit as a metallic sound when the echo density is too high.\n\n\nOn the other hand, reverberation sounds grainy and stuttery when the echo density is too low.\n\n\nA special configuration of comb filter, the allpass-comb, can generate dense reflections without spectral coloring.\n\n\nWe effectively compensate for the resonances with antiresonances, leaving only spectral phase distortion.\n\n\nIn practice this is efficiently accomplished by mixing the final output from the input and output of a feedback delay."
  :outputs []
  :parsed [:comment "## Allpass Comb Filter ##\n\n\nComb filters have heavy resonances that exhibit as a metallic sound when the echo density is too high.\n\n\nOn the other hand, reverberation sounds grainy and stuttery when the echo density is too low.\n\n\nA special configuration of comb filter, the allpass-comb, can generate dense reflections without spectral coloring.\n\n\nWe effectively compensate for the resonances with antiresonances, leaving only spectral phase distortion.\n\n\nIn practice this is efficiently accomplished by mixing the final output from the input and output of a feedback delay."]
- :pos [324 -204]
- }
+ :pos [324 -204]}
  "5kj4ucxh7ffl2hw" 
-{
- :flip-y true
+{:flip-y true
  :inputs ["a" "b" "more..."]
  :label "-"
  :name "input mixer"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-259 -21]
- }
+ :pos [-259 -21]}
  "7163ve4vnm6g1pk" 
 {:color 0
  :inputs ["a"]
  :label "Constraints:Constant!($a)"
  :outputs [""]
  :parsed [:fn "Constraints:Constant!" [:tuple [:free-var "a"]]]
- :pos [-360 37]
- }
+ :pos [-360 37]}
  "alzx6eaaqshpd2" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :name "feedforward"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-123 -83]
- }
+ :pos [-123 -83]}
  "ax4opn23yefni7l" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :name "output mixer"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [2 37]
- }
+ :pos [2 37]}
  "mmfj5c5c121w93e" 
 {:inputs ["order" "sig~"]
  :label "rbuf($order $sig~)"
  :name "delay"
  :outputs [""]
  :parsed [:fn "rbuf" [:tuple [:free-var "order"] [:free-var "sig~"]]]
- :pos [-139 37]
- }
+ :pos [-139 37]}
  "phk2p3rm2cgfnpl" 
 {:flip-x true
  :inputs ["a" "b" "more..."]
@@ -71,15 +64,13 @@
  :name "feedback"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-183 155]
- }
+ :pos [-183 155]}
  "tiy4mokqjej16x9" 
 {:color 0
  :inputs []
  :label "(sig delay feedback) = arg"
  :outputs ["sig" "delay" "feedback"]
  :parsed "arg"
- :pos [-423 -159]
- }}
+ :pos [-423 -159]}}
  :scale 1
  :scroll [0 0]}}

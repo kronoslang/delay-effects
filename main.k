@@ -93,13 +93,13 @@ n7kqm3m2tbf3mrqe-0
 }
 
 Allpass-Comb(sig delay feedback) {
-(ntiy4mokqjej16x9-0 ntiy4mokqjej16x9-1 ntiy4mokqjej16x9-2) = arg
-(n7163ve4vnm6g1pk-0) = Constraints:Constant!(ntiy4mokqjej16x9-1)
-(nmmfj5c5c121w93e-0) = rbuf(n7163ve4vnm6g1pk-0 n5kj4ucxh7ffl2hw-0)
-(nax4opn23yefni7l-0) = (nmmfj5c5c121w93e-0 + nalzx6eaaqshpd2-0)
 (n5kj4ucxh7ffl2hw-0) = (ntiy4mokqjej16x9-0 - nphk2p3rm2cgfnpl-0)
-(nphk2p3rm2cgfnpl-0) = (nmmfj5c5c121w93e-0 * ntiy4mokqjej16x9-2)
+(n7163ve4vnm6g1pk-0) = Constraints:Constant!(ntiy4mokqjej16x9-1)
 (nalzx6eaaqshpd2-0) = (n5kj4ucxh7ffl2hw-0 * ntiy4mokqjej16x9-2)
+(nax4opn23yefni7l-0) = (nmmfj5c5c121w93e-0 + nalzx6eaaqshpd2-0)
+(nmmfj5c5c121w93e-0) = rbuf(n7163ve4vnm6g1pk-0 n5kj4ucxh7ffl2hw-0)
+(nphk2p3rm2cgfnpl-0) = (nmmfj5c5c121w93e-0 * ntiy4mokqjej16x9-2)
+(ntiy4mokqjej16x9-0 ntiy4mokqjej16x9-1 ntiy4mokqjej16x9-2) = arg
 nax4opn23yefni7l-0
 }
 
@@ -107,8 +107,9 @@ Sound-Example() {
 (n851x0kz111qi6wl-0) = Filter:Integrate(n4xe5f8gl6hreckz-0 nmqe1sol43v62eut-0)
 (nmqe1sol43v62eut-0) = 1
 (n7jk5e0hy1269807-0 n7jk5e0hy1269807-1 n7jk5e0hy1269807-2) = :Audio:Loop("423385__crazymonke9__simple-kalimba-loop-on-120-bpm.wav")
-(ncyyp7rug1y3ewzd-0) = Eval(n4beb79kp2d9o93j-0 n851x0kz111qi6wl-0 )
-(n4xe5f8gl6hreckz-0) = Gen:Signal(n6ccadr7e7s9rvc6-0)
+(ncyyp7rug1y3ewzd-0) = Eval(n4beb79kp2d9o93j-0 n9fixfxfpirji7r6-0 )
+(n9fixfxfpirji7r6-0) = (n851x0kz111qi6wl-0 * n6ccadr7e7s9rvc6-0)
+(n4xe5f8gl6hreckz-0) = Gen:Signal(nmqe1sol43v62eut-0)
 (nmlbeoh9gq1lntsy-0) = Gen:Rate()
 (n6ccadr7e7s9rvc6-0) = (nmlbeoh9gq1lntsy-0 / n7jk5e0hy1269807-0)
 (n4beb79kp2d9o93j-0) = Function:Wrap-Hermite(n7jk5e0hy1269807-2)

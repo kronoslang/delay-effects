@@ -3,13 +3,15 @@
  :patch
 {:cables
 {["4beb79kp2d9o93j" 0] [:fixed "7jk5e0hy1269807" 2]
- ["4xe5f8gl6hreckz" 0] [:fixed "6ccadr7e7s9rvc6" 0]
+ ["4xe5f8gl6hreckz" 0] [:fixed "mqe1sol43v62eut" 0]
  ["6ccadr7e7s9rvc6" 0] [:fixed "mlbeoh9gq1lntsy" 0]
  ["6ccadr7e7s9rvc6" 1] [:fixed "7jk5e0hy1269807" 0]
  ["851x0kz111qi6wl" 0] [:fixed "4xe5f8gl6hreckz" 0]
  ["851x0kz111qi6wl" 1] [:fixed "mqe1sol43v62eut" 0]
+ ["9fixfxfpirji7r6" 0] [:fixed "851x0kz111qi6wl" 0]
+ ["9fixfxfpirji7r6" 1] [:fixed "6ccadr7e7s9rvc6" 0]
  ["cyyp7rug1y3ewzd" 0] [:fixed "4beb79kp2d9o93j" 0]
- ["cyyp7rug1y3ewzd" 1] [:fixed "851x0kz111qi6wl" 0]}
+ ["cyyp7rug1y3ewzd" 1] [:fixed "9fixfxfpirji7r6" 0]}
  :nodes
 {"4beb79kp2d9o93j" 
 {:inputs ["fn"]
@@ -23,7 +25,7 @@
  :label "Gen:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Gen:Signal" [:tuple [:free-var "sig"]]]
- :pos [11 -65]
+ :pos [39 -22]
  }
  "6ccadr7e7s9rvc6" 
 {:flip-y true
@@ -46,6 +48,13 @@
  :outputs [""]
  :parsed [:fn "Filter:Integrate" [:tuple [:free-var "sig"] [:free-var "feedback"]]]
  :pos [163 -22]
+ }
+ "9fixfxfpirji7r6" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [318 -12]
  }
  "cyyp7rug1y3ewzd" 
 {:ephemeral-inputs #{"arg"}
@@ -74,5 +83,5 @@
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [63 -153]
+ :pos [-31 -96]
  }}}}
