@@ -51,6 +51,7 @@
 {:color 3
  :inputs ["delay" "rt60"]
  :label "Math:Pow(0.001 $delay / $rt60)"
+ :name "feedback as a function of delay time for current rt60"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "delay"] "/" [:free-var "rt60"]]]]
  :pos [-258 90]
@@ -62,7 +63,7 @@
  :name "shortest time"
  :outputs [""]
  :parsed [:invariant "654"]
- :pos [-209 -290]
+ :pos [-183 -243]
  }
  "39a0b59qhihx05w" 
 {:color 4
@@ -169,11 +170,12 @@
  :label "; ## Parallel Delay Lines ##\n\n\n.. are created here by attaching an input signal to `My-Static-Delay` via partial application and applying that by `Zip-With` over two sets; delay times and feedback coefficients."
  :outputs []
  :parsed [:comment "## Parallel Delay Lines ##\n\n\n.. are created here by attaching an input signal to `My-Static-Delay` via partial application and applying that by `Zip-With` over two sets; delay times and feedback coefficients."]
- :pos [-369 286]
+ :pos [-342 357]
  }
  "e8zcwkivsj5ebr7" 
 {:inputs ["func" "as" "bs"]
  :label "Algorithm:Zip-With($func $as $bs)"
+ :name "comb filter bank"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
  :pos [-28 232]
@@ -183,9 +185,10 @@
 {}
  :inputs ["sig" "delay" "feedback"]
  :label "My-Static-Delay($sig $delay $feedback)"
+ :name "partially applied delay"
  :outputs [""]
  :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
- :pos [-266 233]
+ :pos [-266 232]
  }
  "h3u1ojrp23975qg" 
 {:color 2

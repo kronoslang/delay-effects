@@ -73,8 +73,16 @@ nvayywn2f9ytbeae-0
 }
 
 My-Dynamic-Delay(sig delay max feedback) {
-
-
+(nu8k06ef0xr2d2n7-0) = (n9psoyfa317na6xu-0 + nomtuxk11yenh6gz-0)
+(n8qg8ls8df1vmigg-0 n8qg8ls8df1vmigg-1 n8qg8ls8df1vmigg-2) = rcsbuf(n743mw2csx0qd1qn-0 niu44sa3nx8cvbtx-0 nu8k06ef0xr2d2n7-0)
+(niu44sa3nx8cvbtx-0) = Constraints:Constant!(n9psoyfa317na6xu-2)
+(n10za6cb4q1hr5in-0) = nomtuxk11yenh6gz-0
+(nomtuxk11yenh6gz-0) = (not23u48iyv34a4w-0 * n9psoyfa317na6xu-3)
+(nvlcc6m2i97reovs-0) = (n8qg8ls8df1vmigg-2 - n9psoyfa317na6xu-1)
+(not23u48iyv34a4w-0) = Select-Wrap(n8qg8ls8df1vmigg-0 nvlcc6m2i97reovs-0)
+(n9psoyfa317na6xu-0 n9psoyfa317na6xu-1 n9psoyfa317na6xu-2 n9psoyfa317na6xu-3) = arg
+(n743mw2csx0qd1qn-0) = #0
+n10za6cb4q1hr5in-0
 }
 
 My-Fractional-Delay(sig delay max feedback) {
