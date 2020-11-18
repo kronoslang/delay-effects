@@ -1,4 +1,4 @@
-{:draft-argument "Gen:Sin(440) 450 + Gen:Sin(5) * 400 #1000 0.1"
+{:draft-argument "0.2 * Gen:Sin(440) 1000 + Gen:Sin(1) * 400 #2000 0.1"
  :identifier "My-Dynamic-Delay"
  :identity "p1zcmyedoazqvep"
  :patch
@@ -22,7 +22,8 @@
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [483 172]}
+ :pos [483 172]
+ :selected true}
  "743mw2csx0qd1qn" 
 {:inputs []
  :label "#0"

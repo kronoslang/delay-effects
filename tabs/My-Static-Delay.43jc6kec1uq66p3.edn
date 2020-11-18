@@ -1,5 +1,5 @@
 {:documentation "Delays `sig` by a number of activation `frames`. The output is fed back and added to the input, multiplied by the `feedback` coefficient."
- :draft-argument "sig frames feedback"
+ :draft-argument "0.2 * Gen:Sin(880 * Gen:Sin(0.1)) #20000 0.5"
  :identifier "My-Static-Delay"
  :identity "43jc6kec1uq66p3"
  :patch
