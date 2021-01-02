@@ -5,31 +5,40 @@
 {["2d24d5vt8xylw1" 0] [:fixed "bpghblna29q4oo6" 0]
  ["2d24d5vt8xylw1" 1] [:fixed "mtojgcvjw8jacnx" 0]
  ["2pq8z59cnfr2cko" 0] [:fixed "twk95x5rv8jf9xz" 0]
- ["34s2mchbjm6yqyl" 1] [:fixed "4jj572df4jgmt1w" 0]
+ ["34s2mchbjm6yqyl" 1] [:fixed "vuz8ry17u7jlr1v" 0]
  ["4jj572df4jgmt1w" 0] [:fixed "cpf76j9bz8ab7i5" 0]
  ["4jj572df4jgmt1w" 1] [:fixed "l58mpr7zkpm4gkz" 0]
  ["4k699j91ewvl5s" 0] [:fixed "34s2mchbjm6yqyl" 0]
  ["4k699j91ewvl5s" 1] [:fixed "bbgf6oc0ozmpvv" 0]
  ["7kxxpv2flr078gr" 0] [:fixed "2pq8z59cnfr2cko" 0]
+ ["8abv50an51k174c" 0] [:fixed "nfmc9v34pcaa9cz" 0]
  ["bbgf6oc0ozmpvv" 0] [:fixed "qtuxysvnv5avks3" 0]
  ["bbgf6oc0ozmpvv" 1] [:fixed "kqercm2jc43bgbq" 0]
- ["bbgf6oc0ozmpvv" 2] [:fixed "uvyh3nz45wxdqrh" 0]
+ ["bbgf6oc0ozmpvv" 2] [:fixed "d9gxds39uahzrxt" 0]
  ["bds9p5oq0r174ju" 0] [:fixed "l58mpr7zkpm4gkz" 0]
+ ["d9gxds39uahzrxt" 0] [:fixed "kwgeta55ncr2b64" 0]
+ ["d9gxds39uahzrxt" 1] [:fixed "uvyh3nz45wxdqrh" 0]
+ ["d9gxds39uahzrxt" 2] [:fixed "e9t1t9b195w5vha" 0]
  ["e9t1t9b195w5vha" 0] [:fixed "twk95x5rv8jf9xz" 0]
  ["e9t1t9b195w5vha" 1] [:fixed "smp5mky8p45fkkm" 0]
  ["e9t1t9b195w5vha" 2] [:fixed "wgsa8ew0h85h5ty" 0]
  ["fwelmojxus7i0kk" 1] [:fixed "uj190pnbk3lwyqg" 0]
  ["kqercm2jc43bgbq" 0] [:fixed "fwelmojxus7i0kk" 0]
  ["kqercm2jc43bgbq" 1] [:fixed "e9t1t9b195w5vha" 0]
+ ["kwgeta55ncr2b64" 2] [:fixed "sts9yjnhkumxnps" 0]
  ["mtojgcvjw8jacnx" 0] [:fixed "jeqnini0usdqhk1" 0]
  ["mtojgcvjw8jacnx" 1] [:fixed "twk95x5rv8jf9xz" 0]
  ["nfmc9v34pcaa9cz" 0] [:fixed "4k699j91ewvl5s" 0]
  ["qtuxysvnv5avks3" 2] [:fixed "7kxxpv2flr078gr" 0]
  ["smp5mky8p45fkkm" 1] [:fixed "2d24d5vt8xylw1" 0]
+ ["suni3o8jhiq8llj" 0] [:fixed "32ygb5oaejwf5ho" 0]
+ ["suni3o8jhiq8llj" 1] [:fixed "l58mpr7zkpm4gkz" 0]
+ ["suni3o8jhiq8llj" 2] [:fixed "8abv50an51k174c" 0]
  ["uj190pnbk3lwyqg" 0] [:fixed "n792l6t7u35kws3" 0]
  ["uj190pnbk3lwyqg" 1] [:fixed "bds9p5oq0r174ju" 0]
  ["uvyh3nz45wxdqrh" 0] [:fixed "y5p1yuiv9mm2944" 0]
  ["uvyh3nz45wxdqrh" 1] [:fixed "nfmc9v34pcaa9cz" 0]
+ ["vuz8ry17u7jlr1v" 0] [:fixed "4jj572df4jgmt1w" 0]
  ["y5p1yuiv9mm2944" 0] [:fixed "twk95x5rv8jf9xz" 0]
  ["y5p1yuiv9mm2944" 1] [:fixed "xc85ro1mr70n372" 0]}
  :nodes
@@ -47,7 +56,14 @@
  :label "Math:Sqrt($a)"
  :outputs [""]
  :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
- :pos [-204 16]
+ :pos [-156 209]
+ }
+ "32ygb5oaejwf5ho" 
+{:inputs []
+ :label "0 .o 1"
+ :outputs [""]
+ :parsed [:widget "-v4vtd8" 0.5 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :pos [582 309]
  }
  "34s2mchbjm6yqyl" 
 {:inputs ["a" "b" "more..."]
@@ -69,21 +85,28 @@
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
- :pos [80 358]
+ :pos [338 297]
  }
  "7kxxpv2flr078gr" 
 {:inputs ["b"]
  :label "#1 /"
  :outputs [""]
  :parsed [:infix [:invariant "1"] "/" [:free-var "b"]]
- :pos [-92 16]
+ :pos [-44 209]
+ }
+ "8abv50an51k174c" 
+{:inputs ["elements"]
+ :label "Vector:Cons($elements)"
+ :outputs [""]
+ :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements"]]]
+ :pos [507 379]
  }
  "bbgf6oc0ozmpvv" 
 {:inputs ["func" "as" "bs"]
  :label "Algorithm:Zip-With($func $as $bs)"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [-2 262]
+ :pos [226 236]
  }
  "bds9p5oq0r174ju" 
 {:cable-midpoints 
@@ -98,10 +121,10 @@
  "bpghblna29q4oo6" 
 {:color 2
  :inputs []
- :label "#0.1"
+ :label "#0.25"
  :name "delay spread"
  :outputs [""]
- :parsed [:invariant "0.1"]
+ :parsed [:invariant "0.25"]
  :pos [-384 -235]
  }
  "cpf76j9bz8ab7i5" 
@@ -111,6 +134,13 @@
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
  :pos [-526 288]
  }
+ "d9gxds39uahzrxt" 
+{:inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [222 134]
+ }
  "e9t1t9b195w5vha" 
 {:color 2
  :inputs ["count" "iterator" "seed"]
@@ -118,7 +148,7 @@
  :name "compute delay times"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-122 -76]
+ :pos [-112 -94]
  }
  "egw9x21nbajn5ka" 
 {:color 3
@@ -126,7 +156,7 @@
  :label "; ## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."
  :outputs []
  :parsed [:comment "## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."]
- :pos [385 -99]
+ :pos [808 -290]
  }
  "fwelmojxus7i0kk" 
 {:color 3
@@ -135,7 +165,7 @@
  :name "feedback as a function of delay time for current rt60"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "delay"] "/" [:free-var "rt60"]]]]
- :pos [-248 90]
+ :pos [-249 112]
  }
  "jdj719jqy64kn6z" 
 {:color 2
@@ -161,7 +191,14 @@
  :name "compute feedbacks"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
- :pos [1 90]
+ :pos [7 115]
+ }
+ "kwgeta55ncr2b64" 
+{:inputs ["sig" "delay" "feedback"]
+ :label "My-Static-Delay($sig $delay $feedback)"
+ :outputs [""]
+ :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
+ :pos [21 48]
  }
  "l58mpr7zkpm4gkz" 
 {:color 0
@@ -186,7 +223,7 @@
  :label "1 .o 8"
  :name "reverb decay time"
  :outputs [""]
- :parsed [:widget "-f2z2ok" 0.13 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
+ :parsed [:widget "-f2z2ok" 0 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
  :pos [-657 -27]
  }
  "nfmc9v34pcaa9cz" 
@@ -194,7 +231,7 @@
  :label "FWT($in-1)"
  :outputs [""]
  :parsed [:fn "FWT" [:tuple [:free-var "in-1"]]]
- :pos [213 359]
+ :pos [410 345]
  }
  "qtuxysvnv5avks3" 
 {:ephemeral-inputs #{"more"}
@@ -202,7 +239,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more"] [:free-var "more..."]]
- :pos [-121 205]
+ :pos [55 273]
  }
  "smp5mky8p45fkkm" 
 {:color 2
@@ -211,6 +248,20 @@
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
  :pos [-202 -152]
+ }
+ "sts9yjnhkumxnps" 
+{:inputs []
+ :label "#0"
+ :outputs [""]
+ :parsed [:invariant "0"]
+ :pos [27 -28]
+ }
+ "suni3o8jhiq8llj" 
+{:inputs ["mix" "a" "b"]
+ :label "Math:Mix($mix $a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
+ :pos [666 427]
  }
  "twk95x5rv8jf9xz" 
 {:color 2
@@ -231,19 +282,27 @@
  :pos [-430 -14]
  }
  "uvyh3nz45wxdqrh" 
-{:inputs ["init" "sig~"]
+{:flip-y true
+ :inputs ["init" "sig~"]
  :label "z-1($init $sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
- :pos [304 414]
- :selected true}
+ :pos [463 257]
+ }
+ "vuz8ry17u7jlr1v" 
+{:inputs ["a"]
+ :label "* 0.1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:float "0.1"]]
+ :pos [-251 286]
+ }
  "wgsa8ew0h85h5ty" 
 {:color 2
  :inputs []
- :label "#6540"
+ :label "#3210"
  :name "shortest time"
  :outputs [""]
- :parsed [:invariant "6540"]
+ :parsed [:invariant "3210"]
  :pos [-173 -233]
  }
  "xc85ro1mr70n372" 
@@ -251,12 +310,12 @@
  :label "0"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-8 395]
+ :pos [255 -90]
  }
  "y5p1yuiv9mm2944" 
 {:inputs ["n" "x"]
  :label "Algorithm:Repeat($n $x)"
  :outputs [""]
  :parsed [:fn "Algorithm:Repeat" [:tuple [:free-var "n"] [:free-var "x"]]]
- :pos [81 477]
+ :pos [307 -30]
  }}}}
