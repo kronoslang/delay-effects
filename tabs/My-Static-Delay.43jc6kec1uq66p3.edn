@@ -19,31 +19,27 @@
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-98 -24]
- }
+ :pos [-98 -24]}
  "2ha99ka5ug6jifn" 
 {:inputs ["order" "sig~"]
  :label "rbuf($order $sig~)"
  :name "delay element"
  :outputs [""]
  :parsed [:fn "rbuf" [:tuple [:free-var "order"] [:free-var "sig~"]]]
- :pos [-24 79]
- }
+ :pos [-24 79]}
  "38qxk4lq3bwg4fb" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :name "feedback"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [91 78]
- }
+ :pos [91 78]}
  "5a38ewqd3y4jofe" 
 {:inputs []
  :label ";# Static Delay #\n\n\nA simple delay line can be made by using the `rbuf` primitive, which writes incoming values to a circular buffer, outputting the evicted value at each frame."
  :outputs []
  :parsed [:comment "# Static Delay #\n\n\nA simple delay line can be made by using the `rbuf` primitive, which writes incoming values to a circular buffer, outputting the evicted value at each frame."]
- :pos [196 -229]
- }
+ :pos [196 -229]}
  "bctqp2xafthaomi" 
 {:color 3
  :inputs ["sig"]
@@ -51,16 +47,14 @@
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [290 110]
- }
+ :pos [290 110]}
  "c9i0xdm15546sw3" 
 {:color 0
  :inputs []
  :label "(sig delay feedback) = arg"
  :outputs ["sig" "delay" "feedback"]
  :parsed "arg"
- :pos [-345 -124]
- }
+ :pos [-345 -124]}
  "sbhd9qhh3cwcny" 
 {:inputs []
  :label "; A more [complete delay line](#6) is required to use a value adjustable at run time."
@@ -73,12 +67,10 @@
  :label "Constraints:Constant!($a)"
  :outputs [""]
  :parsed [:fn "Constraints:Constant!" [:tuple [:free-var "a"]]]
- :pos [-202 79]
- }
+ :pos [-202 79]}
  "vayywn2f9ytbeae" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [163 186]
- }}}}
+ :pos [163 186]}}}}

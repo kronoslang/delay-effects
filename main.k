@@ -82,7 +82,7 @@ nq05ywu554huo0z1-0
 Flanger() {
 (np4d8h1jak02kxht-0) = Rate-of(nulw4hmeumteo8si-0)
 (nz1yoir7eud1m50y-0) = (nixhaxufhv81qr5d-0 + 0.51)
-(n0r40lfvtjmw2xd4-0) = 0.5
+(n0r40lfvtjmw2xd4-0) = 0.29000000000000004
 (n5g2odhryl017bw2-0) = #4
 (n2bxwaerged05dvp-0) = (delay) => ( My-Fractional-Delay(nulw4hmeumteo8si-0 delay n6573j12x6pxs50e-0 n0r40lfvtjmw2xd4-0) ) 
 (nxpqebi0scc6ljjt-0) = Vector:Indices(n5g2odhryl017bw2-0)
@@ -91,10 +91,10 @@ Flanger() {
 (nbak78ai0z6pd133-0) = nd1nwt6j3mpz4g5-0
 (nd1nwt6j3mpz4g5-0) = Average(nxaxufzgi56cwdvu-0 )
 (nulw4hmeumteo8si-0) = Sound-Example()
-(n5iiduajss8632n6-0) = 0.5
+(n5iiduajss8632n6-0) = 0.10499999999999998
 (n8zaoslg53qaatt9-0) = Vector:Explode(nvah7cymn03job3a-0)
 (nxaxufzgi56cwdvu-0) = Algorithm:Map(n2bxwaerged05dvp-0 n8zaoslg53qaatt9-0 )
-(njg9kminhodgmjn8-0) = 0.5
+(njg9kminhodgmjn8-0) = 0.15999999999999998
 (nixhaxufhv81qr5d-0) = (ncvglmavyutdi8hv-0 * 0.5)
 (ncvglmavyutdi8hv-0) = Gen:Sin(n5iiduajss8632n6-0 naxoan9c77so5d6c-0)
 (naxoan9c77so5d6c-0) = (nxpqebi0scc6ljjt-0 / n5g2odhryl017bw2-0)

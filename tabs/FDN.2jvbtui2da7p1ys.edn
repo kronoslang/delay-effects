@@ -42,8 +42,7 @@
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-328 -313]
- }
+ :pos [-328 -313]}
  "32ygb5oaejwf5ho" 
 {:color 4
  :inputs []
@@ -51,22 +50,19 @@
  :name "wet/dry"
  :outputs [""]
  :parsed [:widget "-c8lizi" 0.385 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
- :pos [332 337]
- }
+ :pos [332 337]}
  "34s2mchbjm6yqyl" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-176 231]
- }
+ :pos [-176 231]}
  "4jj572df4jgmt1w" 
 {:inputs ["fn" "v"]
  :label "Vector:Horizontal($fn $v)"
  :outputs [""]
  :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
- :pos [-460 175]
- }
+ :pos [-460 175]}
  "4k699j91ewvl5s" 
 {:ephemeral-inputs #{"set"}
  :inputs ["func" "set" "set..."]
@@ -74,39 +70,34 @@
  :name "inject input signal"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
- :pos [91 232]
- }
+ :pos [91 232]}
  "8abv50an51k174c" 
 {:inputs ["elements"]
  :label "Vector:Cons($elements)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements"]]]
- :pos [332 281]
- }
+ :pos [332 281]}
  "8gdk9r5fs1c0ait" 
 {:inputs ["sig" "delay" "rt60" "n"]
  :label "FDN-Delay($sig $delay $rt60 $n)"
  :name "delay line with gain set by rt60"
  :outputs [""]
  :parsed [:fn "FDN-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "rt60"] [:free-var "n"]]]
- :pos [-220 43]
- }
+ :pos [-220 43]}
  "9927n6ofgthtcwx" 
 {:color 2
  :inputs []
  :label "; Generate decorrelated delay times"
  :outputs []
  :parsed [:comment "Generate decorrelated delay times"]
- :pos [-341 -402]
- }
+ :pos [-341 -402]}
  "bbgf6oc0ozmpvv" 
 {:inputs ["func" "as" "bs"]
  :label "Algorithm:Zip-With($func $as $bs)"
  :name "apply delay lines"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [-21 148]
- }
+ :pos [-21 148]}
  "bds9p5oq0r174ju" 
 {:cable-midpoints 
 {}
@@ -115,8 +106,7 @@
  :label "Rate-of($sig)"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-541 36]
- }
+ :pos [-541 36]}
  "bpghblna29q4oo6" 
 {:color 2
  :inputs []
@@ -124,15 +114,13 @@
  :name "delay spread"
  :outputs [""]
  :parsed [:invariant "0.1"]
- :pos [-449 -313]
- }
+ :pos [-449 -313]}
  "cpf76j9bz8ab7i5" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-591 175]
- }
+ :pos [-591 175]}
  "e9t1t9b195w5vha" 
 {:color 2
  :inputs ["count" "iterator" "seed"]
@@ -140,31 +128,27 @@
  :name "generate delay line lenghts"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-190 -153]
- }
+ :pos [-190 -153]}
  "jeqnini0usdqhk1" 
 {:color 2
  :inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-448 -230]
- }
+ :pos [-448 -230]}
  "l2p3zv49kbfrko1" 
 {:inputs []
  :label ";... all reverberation is based on signal delays, which are often implemented as [ring buffers](#4). Dive in and [see how they work](#4) in Veneer!"
  :outputs []
  :parsed [:comment "... all reverberation is based on signal delays, which are often implemented as [ring buffers](#4). Dive in and [see how they work](#4) in Veneer!"]
- :pos [-334 318]
- }
+ :pos [-334 318]}
  "l58mpr7zkpm4gkz" 
 {:color 0
  :inputs []
  :label "Sound-Example()"
  :outputs [""]
  :parsed [:fn "Sound-Example" [:tuple]]
- :pos [-708 103]
- }
+ :pos [-708 103]}
  "mtojgcvjw8jacnx" 
 {:color 2
  :flip-y true
@@ -172,8 +156,7 @@
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-380 -230]
- }
+ :pos [-380 -230]}
  "n792l6t7u35kws3" 
 {:color 4
  :inputs []
@@ -181,16 +164,14 @@
  :name "reverb decay time"
  :outputs [""]
  :parsed [:widget "-vviy9c" 0.6950000000000001 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
- :pos [-610 -90]
- }
+ :pos [-610 -90]}
  "nfmc9v34pcaa9cz" 
 {:inputs ["in-1"]
  :label "FWT($in-1)"
  :name "fast Walsh-Hadamaard transform"
  :outputs [""]
  :parsed [:fn "FWT" [:tuple [:free-var "in-1"]]]
- :pos [210 231]
- }
+ :pos [210 231]}
  "q05ywu554huo0z1" 
 {:color 3
  :inputs ["sig"]
@@ -198,31 +179,27 @@
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [549 350]
- }
+ :pos [549 350]}
  "smp5mky8p45fkkm" 
 {:color 2
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-283 -206]
- }
+ :pos [-283 -206]}
  "suni3o8jhiq8llj" 
 {:inputs ["mix" "a" "b"]
  :label "Math:Mix($mix $a $b)"
  :outputs [""]
  :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
- :pos [444 352]
- }
+ :pos [444 352]}
  "twk95x5rv8jf9xz" 
 {:color 2
  :inputs []
  :label "#8"
  :outputs [""]
  :parsed [:invariant "8"]
- :pos [-448 -154]
- }
+ :pos [-448 -154]}
  "uj190pnbk3lwyqg" 
 {:color 3
  :flip-y true
@@ -231,23 +208,20 @@
  :name "decay in samples"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-420 -61]
- }
+ :pos [-420 -61]}
  "uvyh3nz45wxdqrh" 
 {:flip-y true
  :inputs ["init" "sig~"]
  :label "z-1($init $sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
- :pos [297 185]
- }
+ :pos [297 185]}
  "vuz8ry17u7jlr1v" 
 {:inputs ["a"]
  :label "* 0.1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "0.1"]]
- :pos [-316 175]
- }
+ :pos [-316 175]}
  "wgsa8ew0h85h5ty" 
 {:color 2
  :inputs []
@@ -255,29 +229,25 @@
  :name "shortest time"
  :outputs [""]
  :parsed [:invariant "3210"]
- :pos [-238 -311]
- }
+ :pos [-238 -311]}
  "x5ep3k4w3lc4ada" 
 {:inputs []
  :label ";## Feedback-delay network ##\n\n\n\nworks by repeatedly passing a N-channel signal through a bank of delay lines and multiplying by an orthogonal feedback matrix.\n\n\nThis implementation uses the [Fast Walsh-Hadamaard transform](https://mathworld.wolfram.com/ButterflyGraph.html) to compute the matrix multiplication.\n\n\n[FWT](#10) is the circuit generator for said transform."
  :outputs []
  :parsed [:comment "## Feedback-delay network ##\n\n\n\nworks by repeatedly passing a N-channel signal through a bank of delay lines and multiplying by an orthogonal feedback matrix.\n\n\nThis implementation uses the [Fast Walsh-Hadamaard transform](https://mathworld.wolfram.com/ButterflyGraph.html) to compute the matrix multiplication.\n\n\n[FWT](#10) is the circuit generator for said transform."]
- :pos [419 -221]
- }
+ :pos [419 -221]}
  "xc85ro1mr70n372" 
 {:inputs []
  :label "0"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-11 -117]
- }
+ :pos [-11 -117]}
  "y5p1yuiv9mm2944" 
 {:inputs ["n" "x"]
  :label "Algorithm:Repeat($n $x)"
  :name "feedback initializer"
  :outputs [""]
  :parsed [:fn "Algorithm:Repeat" [:tuple [:free-var "n"] [:free-var "x"]]]
- :pos [72 -57]
- }}
+ :pos [72 -57]}}
  :scale 1
  :scroll [0 0]}}

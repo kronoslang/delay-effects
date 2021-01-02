@@ -125,7 +125,7 @@
  :outputs []
  :parsed [:comment "By [modulating the delay time](#3), different effects such as [chorus](#3) can be created."]
  :pos [-415 308]
- :selected true}
+ }
  "dzv7rnpu96p68qo" 
 {:ephemeral-inputs #{"set"}
  :inputs ["func" "set" "set..."]
