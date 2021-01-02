@@ -50,6 +50,11 @@ Reverb() {
 n0u0zlmq4ek0px-0
 }
 
+FDN() {
+
+
+}
+
 Ringbuffer() {
 (ndpo53heusba2ail-0) = 0
 (nq7oji0v5y41l1be-0) = #10
@@ -109,6 +114,22 @@ Allpass-Comb(sig delay feedback) {
 (nphk2p3rm2cgfnpl-0) = (nmmfj5c5c121w93e-0 * ntiy4mokqjej16x9-2)
 (ntiy4mokqjej16x9-0 ntiy4mokqjej16x9-1 ntiy4mokqjej16x9-2) = arg
 nax4opn23yefni7l-0
+}
+
+FWT(in-1) {
+(n3dc2v72frw03i9k-0) = Algorithm:Concat(noi86yu64v14sn-0 npkdptj9ix4aw3a6-0)
+(n6a2sy2bg6i0c7th-0) = (a b) => ( (a - b) ) 
+(n5camfejd2cfalph-0 n5camfejd2cfalph-1) = Algorithm:Split(no4gbs5m2543ezwy-0 )
+(noi86yu64v14sn-0) = Algorithm:Zip-With(nc211tp1gufpmp2r-0 n6gf7p2j02513vlu-0 nhcqxxrnv9yu6cs-0)
+(nd7apw809c36h195-0) = Polymorphic(n3dc2v72frw03i9k-0 n32ea438vutdp56c-0)
+(n32ea438vutdp56c-0) = arg
+(npkdptj9ix4aw3a6-0) = Algorithm:Zip-With(n6a2sy2bg6i0c7th-0 n6gf7p2j02513vlu-0 nhcqxxrnv9yu6cs-0)
+(no4gbs5m2543ezwy-0) = Constraints:Seq-Length!(n32ea438vutdp56c-0 nu8sd8jqyux8d5lh-0)
+(n6gf7p2j02513vlu-0) = FWT(n5camfejd2cfalph-1)
+(nu8sd8jqyux8d5lh-0) = #2
+(nc211tp1gufpmp2r-0) = (a b) => ( (a + b) ) 
+(nhcqxxrnv9yu6cs-0) = FWT(n5camfejd2cfalph-0)
+nd7apw809c36h195-0
 }
 
 Sound-Example() {

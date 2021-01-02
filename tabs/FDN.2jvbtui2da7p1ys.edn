@@ -1,0 +1,262 @@
+{:identifier "FDN"
+ :identity "2jvbtui2da7p1ys"
+ :patch
+{:cables
+{["2d24d5vt8xylw1" 0] [:fixed "bpghblna29q4oo6" 0]
+ ["2d24d5vt8xylw1" 1] [:fixed "mtojgcvjw8jacnx" 0]
+ ["2pq8z59cnfr2cko" 0] [:fixed "twk95x5rv8jf9xz" 0]
+ ["34s2mchbjm6yqyl" 1] [:fixed "4jj572df4jgmt1w" 0]
+ ["4jj572df4jgmt1w" 0] [:fixed "cpf76j9bz8ab7i5" 0]
+ ["4jj572df4jgmt1w" 1] [:fixed "l58mpr7zkpm4gkz" 0]
+ ["4k699j91ewvl5s" 0] [:fixed "34s2mchbjm6yqyl" 0]
+ ["4k699j91ewvl5s" 1] [:fixed "bbgf6oc0ozmpvv" 0]
+ ["7kxxpv2flr078gr" 0] [:fixed "2pq8z59cnfr2cko" 0]
+ ["bbgf6oc0ozmpvv" 0] [:fixed "qtuxysvnv5avks3" 0]
+ ["bbgf6oc0ozmpvv" 1] [:fixed "kqercm2jc43bgbq" 0]
+ ["bbgf6oc0ozmpvv" 2] [:fixed "uvyh3nz45wxdqrh" 0]
+ ["bds9p5oq0r174ju" 0] [:fixed "l58mpr7zkpm4gkz" 0]
+ ["e9t1t9b195w5vha" 0] [:fixed "twk95x5rv8jf9xz" 0]
+ ["e9t1t9b195w5vha" 1] [:fixed "smp5mky8p45fkkm" 0]
+ ["e9t1t9b195w5vha" 2] [:fixed "wgsa8ew0h85h5ty" 0]
+ ["fwelmojxus7i0kk" 1] [:fixed "uj190pnbk3lwyqg" 0]
+ ["kqercm2jc43bgbq" 0] [:fixed "fwelmojxus7i0kk" 0]
+ ["kqercm2jc43bgbq" 1] [:fixed "e9t1t9b195w5vha" 0]
+ ["mtojgcvjw8jacnx" 0] [:fixed "jeqnini0usdqhk1" 0]
+ ["mtojgcvjw8jacnx" 1] [:fixed "twk95x5rv8jf9xz" 0]
+ ["nfmc9v34pcaa9cz" 0] [:fixed "4k699j91ewvl5s" 0]
+ ["qtuxysvnv5avks3" 2] [:fixed "7kxxpv2flr078gr" 0]
+ ["smp5mky8p45fkkm" 1] [:fixed "2d24d5vt8xylw1" 0]
+ ["uj190pnbk3lwyqg" 0] [:fixed "n792l6t7u35kws3" 0]
+ ["uj190pnbk3lwyqg" 1] [:fixed "bds9p5oq0r174ju" 0]
+ ["uvyh3nz45wxdqrh" 0] [:fixed "y5p1yuiv9mm2944" 0]
+ ["uvyh3nz45wxdqrh" 1] [:fixed "nfmc9v34pcaa9cz" 0]
+ ["y5p1yuiv9mm2944" 0] [:fixed "twk95x5rv8jf9xz" 0]
+ ["y5p1yuiv9mm2944" 1] [:fixed "xc85ro1mr70n372" 0]}
+ :nodes
+{"2d24d5vt8xylw1" 
+{:color 2
+ :flip-y true
+ :inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [-263 -235]
+ }
+ "2pq8z59cnfr2cko" 
+{:inputs ["a"]
+ :label "Math:Sqrt($a)"
+ :outputs [""]
+ :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
+ :pos [-204 16]
+ }
+ "34s2mchbjm6yqyl" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-143 359]
+ }
+ "4jj572df4jgmt1w" 
+{:inputs ["fn" "v"]
+ :label "Vector:Horizontal($fn $v)"
+ :outputs [""]
+ :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
+ :pos [-395 253]
+ }
+ "4k699j91ewvl5s" 
+{:ephemeral-inputs #{"set"}
+ :inputs ["func" "set" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
+ :pos [80 358]
+ }
+ "7kxxpv2flr078gr" 
+{:inputs ["b"]
+ :label "#1 /"
+ :outputs [""]
+ :parsed [:infix [:invariant "1"] "/" [:free-var "b"]]
+ :pos [-92 16]
+ }
+ "bbgf6oc0ozmpvv" 
+{:inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [-2 262]
+ }
+ "bds9p5oq0r174ju" 
+{:cable-midpoints 
+{}
+ :color 0
+ :inputs ["sig"]
+ :label "Rate-of($sig)"
+ :outputs [""]
+ :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
+ :pos [-543 85]
+ }
+ "bpghblna29q4oo6" 
+{:color 2
+ :inputs []
+ :label "#0.1"
+ :name "delay spread"
+ :outputs [""]
+ :parsed [:invariant "0.1"]
+ :pos [-384 -235]
+ }
+ "cpf76j9bz8ab7i5" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-526 288]
+ }
+ "e9t1t9b195w5vha" 
+{:color 2
+ :inputs ["count" "iterator" "seed"]
+ :label "Algorithm:Expand($count $iterator $seed)"
+ :name "compute delay times"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
+ :pos [-122 -76]
+ }
+ "egw9x21nbajn5ka" 
+{:color 3
+ :inputs []
+ :label "; ## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."
+ :outputs []
+ :parsed [:comment "## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."]
+ :pos [385 -99]
+ }
+ "fwelmojxus7i0kk" 
+{:color 3
+ :inputs ["delay" "rt60"]
+ :label "Math:Pow(0.001 $delay / $rt60)"
+ :name "feedback as a function of delay time for current rt60"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "delay"] "/" [:free-var "rt60"]]]]
+ :pos [-248 90]
+ }
+ "jdj719jqy64kn6z" 
+{:color 2
+ :inputs []
+ :label "; ## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."
+ :outputs []
+ :parsed [:comment "## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."]
+ :pos [110 -467]
+ }
+ "jeqnini0usdqhk1" 
+{:color 2
+ :inputs []
+ :label "#1"
+ :outputs [""]
+ :parsed [:invariant "1"]
+ :pos [-383 -152]
+ }
+ "kqercm2jc43bgbq" 
+{:color 3
+ :ephemeral-inputs #{"set"}
+ :inputs ["func" "set" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :name "compute feedbacks"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
+ :pos [1 90]
+ }
+ "l58mpr7zkpm4gkz" 
+{:color 0
+ :inputs []
+ :label "Sound-Example()"
+ :outputs [""]
+ :parsed [:fn "Sound-Example" [:tuple]]
+ :pos [-643 181]
+ }
+ "mtojgcvjw8jacnx" 
+{:color 2
+ :flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "/"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
+ :pos [-315 -152]
+ }
+ "n792l6t7u35kws3" 
+{:color 4
+ :inputs []
+ :label "1 .o 8"
+ :name "reverb decay time"
+ :outputs [""]
+ :parsed [:widget "-f2z2ok" 0.13 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
+ :pos [-657 -27]
+ }
+ "nfmc9v34pcaa9cz" 
+{:inputs ["in-1"]
+ :label "FWT($in-1)"
+ :outputs [""]
+ :parsed [:fn "FWT" [:tuple [:free-var "in-1"]]]
+ :pos [213 359]
+ }
+ "qtuxysvnv5avks3" 
+{:ephemeral-inputs #{"more"}
+ :inputs ["a" "b" "more" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more"] [:free-var "more..."]]
+ :pos [-121 205]
+ }
+ "smp5mky8p45fkkm" 
+{:color 2
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-202 -152]
+ }
+ "twk95x5rv8jf9xz" 
+{:color 2
+ :inputs []
+ :label "#8"
+ :outputs [""]
+ :parsed [:invariant "8"]
+ :pos [-383 -76]
+ }
+ "uj190pnbk3lwyqg" 
+{:color 3
+ :flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :name "decay in samples"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-430 -14]
+ }
+ "uvyh3nz45wxdqrh" 
+{:inputs ["init" "sig~"]
+ :label "z-1($init $sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "init"] [:free-var "sig~"]]]
+ :pos [304 414]
+ :selected true}
+ "wgsa8ew0h85h5ty" 
+{:color 2
+ :inputs []
+ :label "#6540"
+ :name "shortest time"
+ :outputs [""]
+ :parsed [:invariant "6540"]
+ :pos [-173 -233]
+ }
+ "xc85ro1mr70n372" 
+{:inputs []
+ :label "0"
+ :outputs [""]
+ :parsed [:float "0"]
+ :pos [-8 395]
+ }
+ "y5p1yuiv9mm2944" 
+{:inputs ["n" "x"]
+ :label "Algorithm:Repeat($n $x)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Repeat" [:tuple [:free-var "n"] [:free-var "x"]]]
+ :pos [81 477]
+ }}}}

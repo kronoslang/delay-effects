@@ -37,14 +37,16 @@
  :label "Allpass-Comb($sig $delay $feedback)"
  :outputs [""]
  :parsed [:fn "Allpass-Comb" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
- :pos [31 367]}
+ :pos [6 343]
+ :selected true}
  "0u0zlmq4ek0px" 
 {:inputs ["sig"]
  :label "o))"
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [420 426]}
+ :pos [420 426]
+ :selected true}
  "11teks5w3if5biv" 
 {:color 3
  :inputs ["delay" "rt60"]
@@ -52,7 +54,8 @@
  :name "feedback as a function of delay time for current rt60"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "delay"] "/" [:free-var "rt60"]]]]
- :pos [-258 90]}
+ :pos [-258 90]
+ :selected true}
  "1aa9mxrcduio0tb" 
 {:color 2
  :inputs []
@@ -60,7 +63,8 @@
  :name "shortest time"
  :outputs [""]
  :parsed [:invariant "654"]
- :pos [-183 -243]}
+ :pos [-183 -243]
+ :selected true}
  "39a0b59qhihx05w" 
 {:color 4
  :inputs []
@@ -68,14 +72,16 @@
  :name "wet and dry"
  :outputs [""]
  :parsed [:widget "am2db1" 0.6 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
- :pos [188 412]}
+ :pos [188 412]
+ :selected true}
  "3xbh9u92b05zgcy" 
 {:color 0
  :inputs []
  :label "Sound-Example()"
  :outputs [""]
  :parsed [:fn "Sound-Example" [:tuple]]
- :pos [-549 198]}
+ :pos [-549 198]
+ :selected true}
  "44ry10ahemcibi9" 
 {:color 3
  :flip-y true
@@ -84,14 +90,16 @@
  :name "decay in samples"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-440 -24]}
+ :pos [-440 -24]
+ :selected true}
  "4dx5abc0k1h28wj" 
 {:color 4
  :inputs []
  :label "; ## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing allpass filters."
  :outputs []
  :parsed [:comment "## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing allpass filters."]
- :pos [568 222]}
+ :pos [568 222]
+ :selected true}
  "6t3lwzn34bpdea" 
 {:color 2
  :flip-y true
@@ -99,7 +107,8 @@
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-325 -162]}
+ :pos [-325 -162]
+ :selected true}
  "7aihl92sgcayv36" 
 {:cable-midpoints 
 {}
@@ -108,7 +117,8 @@
  :label "Rate-of($sig)"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-553 75]}
+ :pos [-553 75]
+ :selected true}
  "a5ec3rbnq200f0n" 
 {:color 3
  :ephemeral-inputs #{"set"}
@@ -117,7 +127,8 @@
  :name "compute feedbacks"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
- :pos [7 97]}
+ :pos [7 97]
+ :selected true}
  "b7p0jtwpmxvltrq" 
 {:color 4
  :ephemeral-inputs #{"set" "set2"}
@@ -126,7 +137,8 @@
  :name "allpass cascade"
  :outputs [""]
  :parsed [:fn "Algorithm:Reduce" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set2"] [:free-var "set..."]]]
- :pos [263 338]}
+ :pos [260 340]
+ :selected true}
  "baalsv3lkdxac25" 
 {:cable-midpoints 
 {1 [294 -7]}
@@ -134,14 +146,16 @@
  :label "Math:Mix($mix $a $b)"
  :outputs [""]
  :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
- :pos [324 426]}
+ :pos [324 426]
+ :selected true}
  "bl81erkv158sv3v" 
 {:color 2
  :inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-393 -162]}
+ :pos [-393 -162]
+ :selected true}
  "cdkph0c1yosl3ib" 
 {:color 2
  :inputs ["count" "iterator" "seed"]
@@ -149,20 +163,23 @@
  :name "compute delay times"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-132 -86]}
+ :pos [-132 -86]
+ :selected true}
  "dmu88ujy2k2rohd" 
 {:inputs []
  :label "; ## Parallel Delay Lines ##\n\n\n.. are created here by attaching an input signal to `My-Static-Delay` via partial application and applying that by `Zip-With` over two sets; delay times and feedback coefficients."
  :outputs []
  :parsed [:comment "## Parallel Delay Lines ##\n\n\n.. are created here by attaching an input signal to `My-Static-Delay` via partial application and applying that by `Zip-With` over two sets; delay times and feedback coefficients."]
- :pos [-342 357]}
+ :pos [-342 357]
+ :selected true}
  "e8zcwkivsj5ebr7" 
 {:inputs ["func" "as" "bs"]
  :label "Algorithm:Zip-With($func $as $bs)"
  :name "comb filter bank"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [-28 232]}
+ :pos [-28 232]
+ :selected true}
  "g2z39u2apec4nn0" 
 {:cable-midpoints 
 {}
@@ -171,14 +188,16 @@
  :name "partially applied delay"
  :outputs [""]
  :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
- :pos [-266 232]}
+ :pos [-266 232]
+ :selected true}
  "h3u1ojrp23975qg" 
 {:color 2
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-212 -162]}
+ :pos [-212 -162]
+ :selected true}
  "hxwaczbsfgz942c" 
 {:color 4
  :ephemeral-inputs #{"numbers"}
@@ -187,7 +206,8 @@
  :name "sum"
  :outputs [""]
  :parsed [:fn "Average" [:tuple [:free-var "numbers"] [:free-var "numbers..."]]]
- :pos [142 271]}
+ :pos [142 271]
+ :selected true}
  "ie15t2d5rsck9fb" 
 {:color 4
  :inputs []
@@ -195,14 +215,16 @@
  :name "reverb decay time"
  :outputs [""]
  :parsed [:widget "aypmz7" 0.255 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
- :pos [-667 -37]}
+ :pos [-667 -37]
+ :selected true}
  "l77prq3o38a3k76" 
 {:color 4
  :inputs []
  :label "[#421 #312 #203]"
  :outputs [""]
  :parsed [:list [:invariant "421"] [:invariant "312"] [:invariant "203"]]
- :pos [171 210]}
+ :pos [171 210]
+ :selected true}
  "ouage71f6p0xcod" 
 {:color 2
  :flip-y true
@@ -210,28 +232,32 @@
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-273 -245]}
+ :pos [-273 -245]
+ :selected true}
  "q6131n4womq8vb" 
 {:color 2
  :inputs []
  :label "#8"
  :outputs [""]
  :parsed [:invariant "8"]
- :pos [-393 -86]}
+ :pos [-393 -86]
+ :selected true}
  "vprttul86t1a5sj" 
 {:color 3
  :inputs []
  :label "; ## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."
  :outputs []
  :parsed [:comment "## Feedback Coefficients ##\n\n\nNext, we need feedback for each delay line.\n\n\nReverb times are specified in terms of *decay by 60dB*. The feedback coefficient is computed by taking the `X`:th root of 0.001 (which corresponds to -60dB), where `X` is the number of round trips the signal takes in the delay line during decay - delay time divided by decay time."]
- :pos [346 -116]}
+ :pos [346 -116]
+ :selected true}
  "x92w4cuid5oz75z" 
 {:color 2
  :inputs []
  :label "; ## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."
  :outputs []
  :parsed [:comment "## Decorrelated Echoes ##\n\n\n.. are important if you want a smooth-sounding reverb tail.\n\n\nOne way of making sure the resonant modes of the echoes don't overlap too much is to place the delay times on an exponential curve.\n\n\nHere we start from `654` samples and generate a series where each next value is `3^(1/N)` times the previous value - N is the number of delay times to generate."]
- :pos [100 -477]}
+ :pos [100 -477]
+ :selected true}
  "ypz6dk3au5wds" 
 {:color 2
  :inputs []
@@ -239,7 +265,8 @@
  :name "delay spread"
  :outputs [""]
  :parsed [:invariant "3"]
- :pos [-342 -245]}
+ :pos [-342 -245]
+ :selected true}
  "zxh200dfyia1dw8" 
 {:color 4
  :inputs []
@@ -247,6 +274,7 @@
  :name "echo density"
  :outputs [""]
  :parsed [:widget "1owj8j" 0.5 {:type :dial, :skin :circular, :min [:float "0.0"], :max [:float "0.95"]}]
- :pos [-38 428]}}
+ :pos [-38 428]
+ :selected true}}
  :scale 1
  :scroll [0 0]}}

@@ -63,7 +63,7 @@
  :outputs [""]
  :parsed [:free-var "out"]
  :pos [482 237]
- }
+ :selected true}
  "b7e1ejxrzqa1qb3" 
 {:inputs ["a" "b" "more..."]
  :label "+"

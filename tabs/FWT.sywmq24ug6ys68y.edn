@@ -1,0 +1,121 @@
+{:draft-argument "[1 2 3 4]"
+ :identifier "FWT"
+ :identity "sywmq24ug6ys68y"
+ :patch
+{:cables
+{["3dc2v72frw03i9k" 0] [:fixed "oi86yu64v14sn" 0]
+ ["3dc2v72frw03i9k" 1] [:fixed "pkdptj9ix4aw3a6" 0]
+ ["5camfejd2cfalph" 0] [:fixed "o4gbs5m2543ezwy" 0]
+ ["6gf7p2j02513vlu" 0] [:fixed "5camfejd2cfalph" 1]
+ ["d7apw809c36h195" 0] [:fixed "3dc2v72frw03i9k" 0]
+ ["d7apw809c36h195" 1] [:fixed "32ea438vutdp56c" 0]
+ ["hcqxxrnv9yu6cs" 0] [:fixed "5camfejd2cfalph" 0]
+ ["o4gbs5m2543ezwy" 0] [:fixed "32ea438vutdp56c" 0]
+ ["o4gbs5m2543ezwy" 1] [:fixed "u8sd8jqyux8d5lh" 0]
+ ["oi86yu64v14sn" 0] [:fixed "c211tp1gufpmp2r" 0]
+ ["oi86yu64v14sn" 1] [:fixed "6gf7p2j02513vlu" 0]
+ ["oi86yu64v14sn" 2] [:fixed "hcqxxrnv9yu6cs" 0]
+ ["pkdptj9ix4aw3a6" 0] [:fixed "6a2sy2bg6i0c7th" 0]
+ ["pkdptj9ix4aw3a6" 1] [:fixed "6gf7p2j02513vlu" 0]
+ ["pkdptj9ix4aw3a6" 2] [:fixed "hcqxxrnv9yu6cs" 0]}
+ :nodes
+{"32ea438vutdp56c" 
+{:inputs []
+ :label "arg"
+ :outputs [""]
+ :parsed "arg"
+ :pos [-562 -195]
+ }
+ "3dc2v72frw03i9k" 
+{:inputs ["as" "bs"]
+ :label "Algorithm:Concat($as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Concat" [:tuple [:free-var "as"] [:free-var "bs"]]]
+ :pos [273 37]
+ }
+ "5camfejd2cfalph" 
+{:ephemeral-inputs #{"xs"}
+ :inputs ["xs" "xs..."]
+ :label "Algorithm:Split($xs...)"
+ :outputs ["" ""]
+ :parsed [:fn "Algorithm:Split" [:tuple [:free-var "xs"] [:free-var "xs..."]]]
+ :pos [-269 35]
+ }
+ "6a2sy2bg6i0c7th" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-106 -99]
+ }
+ "6gf7p2j02513vlu" 
+{:inputs ["in-1"]
+ :label "FWT($in-1)"
+ :outputs [""]
+ :parsed [:fn "FWT" [:tuple [:free-var "in-1"]]]
+ :pos [-106 78]
+ }
+ "9j7ozxie958eqzv" 
+{:inputs []
+ :label ";# Fast Walsh-Hadamaard Transform #\n\n\nThis is an [optimized way](https://en.wikipedia.org/wiki/Fast_Walsh%E2%80%93Hadamard_transform) to compute matrix multiplication with a [Hadamaard matrix](https://en.wikipedia.org/wiki/Hadamard_transform).\n\n\nWhen we have an incoming sequence with two or more elements, it is split in half. Each half is transformed anew, and the results are combined as a concatenation of sums and differences.\n\n\nThe resulting circuit is [butterfly-shaped](https://mathworld.wolfram.com/ButterflyGraph.html) and computes the matrix multiply in `n log n` operations, instead of the general case of `n^2` operations."
+ :outputs []
+ :parsed [:comment "# Fast Walsh-Hadamaard Transform #\n\n\nThis is an [optimized way](https://en.wikipedia.org/wiki/Fast_Walsh%E2%80%93Hadamard_transform) to compute matrix multiplication with a [Hadamaard matrix](https://en.wikipedia.org/wiki/Hadamard_transform).\n\n\nWhen we have an incoming sequence with two or more elements, it is split in half. Each half is transformed anew, and the results are combined as a concatenation of sums and differences.\n\n\nThe resulting circuit is [butterfly-shaped](https://mathworld.wolfram.com/ButterflyGraph.html) and computes the matrix multiply in `n log n` operations, instead of the general case of `n^2` operations."]
+ :pos [449 -443]
+ }
+ "c211tp1gufpmp2r" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-106 144]
+ }
+ "d7apw809c36h195" 
+{:cable-midpoints 
+{}
+ :ephemeral-inputs #{"forms"}
+ :inputs ["forms" "forms..."]
+ :label "Polymorphic($forms...)"
+ :name "recur until the input is an atom, and terminate with identity"
+ :outputs [""]
+ :parsed [:fn "Polymorphic" [:tuple [:free-var "forms"] [:free-var "forms..."]]]
+ :pos [442 37]
+ }
+ "hcqxxrnv9yu6cs" 
+{:inputs ["in-1"]
+ :label "FWT($in-1)"
+ :outputs [""]
+ :parsed [:fn "FWT" [:tuple [:free-var "in-1"]]]
+ :pos [-106 -29]
+ }
+ "o4gbs5m2543ezwy" 
+{:inputs ["s" "n"]
+ :label "Constraints:Seq-Length!($s $n)"
+ :name "constrain the downstream circuit to 2 or more elements"
+ :outputs [""]
+ :parsed [:fn "Constraints:Seq-Length!" [:tuple [:free-var "s"] [:free-var "n"]]]
+ :pos [-410 35]
+ }
+ "oi86yu64v14sn" 
+{:inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [72 144]
+ }
+ "pkdptj9ix4aw3a6" 
+{:flip-y true
+ :inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [72 -99]
+ }
+ "u8sd8jqyux8d5lh" 
+{:inputs []
+ :label "#2"
+ :outputs [""]
+ :parsed [:invariant "2"]
+ :pos [-446 -36]
+ }}
+ :scale 1
+ :scroll [0 0]}}

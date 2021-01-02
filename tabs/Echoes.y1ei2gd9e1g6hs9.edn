@@ -22,7 +22,8 @@
  :label "[#1234, #2345, #3456, #4567, #5678, #6789]"
  :outputs [""]
  :parsed [:list [:invariant "1234"] [:invariant "2345"] [:invariant "3456"] [:invariant "4567"] [:invariant "5678"] [:invariant "6789"]]
- :pos [152 -37]}
+ :pos [152 -37]
+ }
  "1now9r55ea4ats" 
 {:color 3
  :inputs ["sig"]
@@ -30,7 +31,8 @@
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [505 176]}
+ :pos [505 176]
+ :selected true}
  "1oxswcgia1ab461" 
 {:color 3
  :inputs ["sig"]
@@ -38,85 +40,98 @@
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [-237 204]}
+ :pos [-237 204]
+ }
  "3ssqul1utn8y8uo" 
 {:inputs ["mix" "a" "b"]
  :label "Math:Mix($mix $a $b)"
  :outputs [""]
  :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
- :pos [-332 204]}
+ :pos [-332 204]
+ }
  "6r585m41x2cu76z" 
 {:inputs []
  :label ";# Many Echoes #\n\n\nAdding multiple echoes with feedback and non-overlapping delay times yields a simple reverb."
  :outputs []
  :parsed [:comment "# Many Echoes #\n\n\nAdding multiple echoes with feedback and non-overlapping delay times yields a simple reverb."]
- :pos [191 -227]}
+ :pos [191 -227]
+ }
  "73t603k8yqdoxid" 
 {:ephemeral-inputs #{"numbers" "numbers2"}
  :inputs ["numbers" "numbers2" "numbers..."]
  :label "Average($numbers...)"
  :outputs [""]
  :parsed [:fn "Average" [:tuple [:free-var "numbers"] [:free-var "numbers2"] [:free-var "numbers..."]]]
- :pos [395 171]}
+ :pos [395 171]
+ }
  "75qf7bi9ilwsozh" 
 {:inputs []
  :label ";# Echo #\n\n\n... is the simplest delay effect in music. Here, you can adjust the mixing balance between undelayed and delayed sound."
  :outputs []
  :parsed [:comment "# Echo #\n\n\n... is the simplest delay effect in music. Here, you can adjust the mixing balance between undelayed and delayed sound."]
- :pos [-463 -254]}
+ :pos [-463 -254]
+ }
  "95ogosjtx3dqi9y" 
 {:inputs []
  :label "0"
  :name "no feedback"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-289 -55]}
+ :pos [-289 -55]
+ }
  "9dbg51533owz15e" 
 {:inputs []
  :label "0.9"
  :outputs [""]
  :parsed [:float "0.9"]
- :pos [109 13]}
+ :pos [109 13]
+ }
  "ax92drr7ur4hrq1" 
 {:color 0
  :inputs []
  :label "Sound-Example()"
  :outputs [""]
  :parsed [:fn "Sound-Example" [:tuple]]
- :pos [-605 -29]}
+ :pos [-605 -29]
+ }
  "cwz5tcyqgpb0dyl" 
 {:color 0
  :inputs []
  :label "Sound-Example()"
  :outputs [""]
  :parsed [:fn "Sound-Example" [:tuple]]
- :pos [-33 120]}
+ :pos [-33 120]
+ }
  "d89tyhb4hkv98e8" 
 {:inputs []
  :label "#8000"
  :name "delay samples"
  :outputs [""]
  :parsed [:invariant "8000"]
- :pos [-398 -56]}
+ :pos [-398 -56]
+ }
  "dzv7rnpu96p68qo" 
 {:ephemeral-inputs #{"set"}
  :inputs ["func" "set" "set..."]
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
- :pos [363 88]}
+ :pos [363 88]
+ }
  "nloqgm0p14lm1rx" 
 {:inputs ["sig" "delay" "feedback"]
  :label "My-Static-Delay($sig $delay $feedback)"
  :outputs [""]
  :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
- :pos [198 89]}
+ :pos [198 89]
+ }
  "suo43z8l5q1acbu" 
 {:inputs ["sig" "delay" "feedback"]
  :label "My-Static-Delay($sig $delay $feedback)"
  :outputs [""]
  :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
- :pos [-283 34]}
+ :pos [-283 34]
+ }
  "tre7cl8jeet1afk" 
 {:color 3
  :inputs []
@@ -124,6 +139,7 @@
  :name "tweak here!"
  :outputs [""]
  :parsed [:widget "qgk8nc" 0.525 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "0.5"]}]
- :pos [-444 190]}}
+ :pos [-444 190]
+ }}
  :scale 1
  :scroll [0 0]}}
