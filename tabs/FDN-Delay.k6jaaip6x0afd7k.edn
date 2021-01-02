@@ -1,0 +1,95 @@
+{
+ :identifier "FDN-Delay"
+ :identity "k6jaaip6x0afd7k"
+ :patch
+{:cables
+{["78vl9hwl21oocpv" 0] [:fixed "nq4wwi3n283di6j" 3]
+ ["9wk78itfqkgdcjy" 0] [:fixed "78vl9hwl21oocpv" 0]
+ ["ic29ux4xlgdm647" 0] [:fixed "u34p7kkb0aiq8sw" 0]
+ ["ic29ux4xlgdm647" 1] [:fixed "q6awi8zocnmg8ci" 0]
+ ["ic29ux4xlgdm647" 2] [:fixed "9wk78itfqkgdcjy" 0]
+ ["pjkh2364b7cdq7i" 0] [:fixed "nq4wwi3n283di6j" 1]
+ ["pjkh2364b7cdq7i" 1] [:fixed "nq4wwi3n283di6j" 2]
+ ["q6awi8zocnmg8ci" 0] [:fixed "ydd1x38g48ng4co" 0]
+ ["q6awi8zocnmg8ci" 1] [:fixed "pjkh2364b7cdq7i" 0]
+ ["u34p7kkb0aiq8sw" 0] [:fixed "nq4wwi3n283di6j" 0]
+ ["u34p7kkb0aiq8sw" 1] [:fixed "nq4wwi3n283di6j" 1]
+ ["u34p7kkb0aiq8sw" 2] [:fixed "a5a3is5991chn0d" 0]}
+ :nodes
+{"74awu4a1q88gcgf" 
+{:inputs []
+ :label "; Convenience delay line for FDN that computes the output gain based on matrix size and rt60"
+ :outputs []
+ :parsed [:comment "Convenience delay line for FDN that computes the output gain based on matrix size and rt60"]
+ :pos [-115 -284]
+ }
+ "78vl9hwl21oocpv" 
+{:inputs ["a"]
+ :label "Math:Sqrt($a)"
+ :outputs [""]
+ :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
+ :pos [138 -147]
+ }
+ "9wk78itfqkgdcjy" 
+{:inputs ["b"]
+ :label "#1 /"
+ :name "normalize for matrix size"
+ :outputs [""]
+ :parsed [:infix [:invariant "1"] "/" [:free-var "b"]]
+ :pos [265 -95]
+ }
+ "a5a3is5991chn0d" 
+{:inputs []
+ :label "#0"
+ :outputs [""]
+ :parsed [:invariant "0"]
+ :pos [-76 27]
+ }
+ "ic29ux4xlgdm647" 
+{:color 3
+ :ephemeral-inputs #{"more"}
+ :inputs ["a" "b" "more" "more..."]
+ :label "*"
+ :name "gain stage"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more"] [:free-var "more..."]]
+ :pos [269 96]
+ }
+ "nq4wwi3n283di6j" 
+{:inputs []
+ :label "(sig delay rt60 n) = arg"
+ :outputs ["sig" "delay" "rt60" "n"]
+ :parsed "arg"
+ :pos [-368 -126]
+ }
+ "pjkh2364b7cdq7i" 
+{:inputs ["a" "b" "more..."]
+ :label "/"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
+ :pos [1 -119]
+ }
+ "q6awi8zocnmg8ci" 
+{:inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :name "compute decay from rt60"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [123 -49]
+ }
+ "u34p7kkb0aiq8sw" 
+{:color 3
+ :inputs ["sig" "delay" "feedback"]
+ :label "My-Static-Delay($sig $delay $feedback)"
+ :name "delay line"
+ :outputs [""]
+ :parsed [:fn "My-Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "feedback"]]]
+ :pos [-75 96]
+ }
+ "ydd1x38g48ng4co" 
+{:inputs []
+ :label "0.001"
+ :outputs [""]
+ :parsed [:float "0.001"]
+ :pos [11 -31]
+ }}}}

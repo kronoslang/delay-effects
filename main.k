@@ -51,40 +51,34 @@ n0u0zlmq4ek0px-0
 }
 
 FDN() {
-(n32ygb5oaejwf5ho-0) = 0.5
+(n32ygb5oaejwf5ho-0) = 0.385
 (nbds9p5oq0r174ju-0) = Rate-of(nl58mpr7zkpm4gkz-0)
 (nmtojgcvjw8jacnx-0) = (njeqnini0usdqhk1-0 / ntwk95x5rv8jf9xz-0)
 (nnfmc9v34pcaa9cz-0) = FWT(n4k699j91ewvl5s-0)
-(n7kxxpv2flr078gr-0) = (#1 / n2pq8z59cnfr2cko-0)
 (nxc85ro1mr70n372-0) = 0
 (nsuni3o8jhiq8llj-0) = Math:Mix(n32ygb5oaejwf5ho-0 nl58mpr7zkpm4gkz-0 n8abv50an51k174c-0)
 (nuj190pnbk3lwyqg-0) = (nn792l6t7u35kws3-0 * nbds9p5oq0r174ju-0)
-(nn792l6t7u35kws3-0) = 0
+(nn792l6t7u35kws3-0) = 0.6950000000000001
 (nl58mpr7zkpm4gkz-0) = Sound-Example()
-(nd9gxds39uahzrxt-0) = Algorithm:Zip-With(nkwgeta55ncr2b64-0 nuvyh3nz45wxdqrh-0 ne9t1t9b195w5vha-0)
 (nsmp5mky8p45fkkm-0) = (a) => ( (a * n2d24d5vt8xylw1-0) ) 
 (nuvyh3nz45wxdqrh-0) = z-1(ny5p1yuiv9mm2944-0 nnfmc9v34pcaa9cz-0)
-(n2pq8z59cnfr2cko-0) = Math:Sqrt(ntwk95x5rv8jf9xz-0)
-(nbpghblna29q4oo6-0) = #0.25
+(nbpghblna29q4oo6-0) = #0.1
 (ne9t1t9b195w5vha-0) = Algorithm:Expand(ntwk95x5rv8jf9xz-0 nsmp5mky8p45fkkm-0 nwgsa8ew0h85h5ty-0)
 (ncpf76j9bz8ab7i5-0) = (a b) => ( (a + b) ) 
-(nkqercm2jc43bgbq-0) = Algorithm:Map(nfwelmojxus7i0kk-0 ne9t1t9b195w5vha-0 )
-(nsts9yjnhkumxnps-0) = #0
 (nwgsa8ew0h85h5ty-0) = #3210
 (n2d24d5vt8xylw1-0) = Math:Pow(nbpghblna29q4oo6-0 nmtojgcvjw8jacnx-0)
 (njeqnini0usdqhk1-0) = #1
-(nkwgeta55ncr2b64-0) = (sig delay) => ( My-Static-Delay(sig delay nsts9yjnhkumxnps-0) ) 
 (n4k699j91ewvl5s-0) = Algorithm:Map(n34s2mchbjm6yqyl-0 nbbgf6oc0ozmpvv-0 )
 (n34s2mchbjm6yqyl-0) = (a) => ( (a + nvuz8ry17u7jlr1v-0) ) 
 (ny5p1yuiv9mm2944-0) = Algorithm:Repeat(ntwk95x5rv8jf9xz-0 nxc85ro1mr70n372-0)
 (n8abv50an51k174c-0) = Vector:Cons(nnfmc9v34pcaa9cz-0)
-(nfwelmojxus7i0kk-0) = (delay) => ( Math:Pow(0.001 (delay / nuj190pnbk3lwyqg-0)) ) 
-(nbbgf6oc0ozmpvv-0) = Algorithm:Zip-With(nqtuxysvnv5avks3-0 nkqercm2jc43bgbq-0 nd9gxds39uahzrxt-0)
-(nqtuxysvnv5avks3-0) = (a b) => ( (a * b * n7kxxpv2flr078gr-0) ) 
+(nq05ywu554huo0z1-0) = nsuni3o8jhiq8llj-0
+(n8gdk9r5fs1c0ait-0) = (sig delay) => ( FDN-Delay(sig delay nuj190pnbk3lwyqg-0 ntwk95x5rv8jf9xz-0) ) 
+(nbbgf6oc0ozmpvv-0) = Algorithm:Zip-With(n8gdk9r5fs1c0ait-0 nuvyh3nz45wxdqrh-0 ne9t1t9b195w5vha-0)
 (ntwk95x5rv8jf9xz-0) = #8
 (nvuz8ry17u7jlr1v-0) = (n4jj572df4jgmt1w-0 * 0.1)
 (n4jj572df4jgmt1w-0) = Vector:Horizontal(ncpf76j9bz8ab7i5-0 nl58mpr7zkpm4gkz-0)
-nsuni3o8jhiq8llj-0
+nq05ywu554huo0z1-0
 }
 
 Ringbuffer() {
@@ -135,6 +129,19 @@ My-Fractional-Delay(sig delay max feedback) {
 (nbt33alb77zrphl-0) = Function:Wrap-Hermite(nws5victi1d5r7kl-0)
 (ndxhjy8kra99akoa-0) = Eval(nbt33alb77zrphl-0 nz7w3oldw6glzdha-0 )
 n7kqm3m2tbf3mrqe-0
+}
+
+FDN-Delay(sig delay rt60 n) {
+(na5a3is5991chn0d-0) = #0
+(nydd1x38g48ng4co-0) = 0.001
+(nic29ux4xlgdm647-0) = (nu34p7kkb0aiq8sw-0 * nq6awi8zocnmg8ci-0 * n9wk78itfqkgdcjy-0)
+(nnq4wwi3n283di6j-0 nnq4wwi3n283di6j-1 nnq4wwi3n283di6j-2 nnq4wwi3n283di6j-3) = arg
+(npjkh2364b7cdq7i-0) = (nnq4wwi3n283di6j-1 / nnq4wwi3n283di6j-2)
+(nu34p7kkb0aiq8sw-0) = My-Static-Delay(nnq4wwi3n283di6j-0 nnq4wwi3n283di6j-1 na5a3is5991chn0d-0)
+(n78vl9hwl21oocpv-0) = Math:Sqrt(nnq4wwi3n283di6j-3)
+(nq6awi8zocnmg8ci-0) = Math:Pow(nydd1x38g48ng4co-0 npjkh2364b7cdq7i-0)
+(n9wk78itfqkgdcjy-0) = (#1 / n78vl9hwl21oocpv-0)
+nic29ux4xlgdm647-0
 }
 
 Allpass-Comb(sig delay feedback) {
