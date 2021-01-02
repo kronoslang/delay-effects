@@ -45,7 +45,7 @@
  :label "; Generate four phase-offset LFOs from index vector"
  :outputs []
  :parsed [:comment "Generate four phase-offset LFOs from index vector"]
- :pos [-87 -231]
+ :pos [-57 -235]
  }
  "5g2odhryl017bw2" 
 {:inputs []
@@ -111,10 +111,10 @@
  }
  "iv1d07q0u5qcaa3" 
 {:inputs []
- :label ";## Modulation Delay ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."
+ :label ";## Chorus / Flanger ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."
  :outputs []
- :parsed [:comment "## Modulation Delay ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."]
- :pos [417 -220]
+ :parsed [:comment "## Chorus / Flanger ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."]
+ :pos [417 -223]
  }
  "ixhaxufhv81qr5d" 
 {:inputs ["a"]

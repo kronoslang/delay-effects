@@ -61,6 +61,13 @@
  :parsed "arg"
  :pos [-345 -124]
  }
+ "sbhd9qhh3cwcny" 
+{:inputs []
+ :label "; A more [complete delay line](#6) is required to use a value adjustable at run time."
+ :outputs []
+ :parsed [:comment "A more [complete delay line](#6) is required to use a value adjustable at run time."]
+ :pos [-233 239]
+ :selected true}
  "uvt247wbd8744jl" 
 {:inputs ["a"]
  :label "Constraints:Constant!($a)"

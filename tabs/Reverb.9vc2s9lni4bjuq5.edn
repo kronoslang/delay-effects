@@ -96,11 +96,11 @@
  "4dx5abc0k1h28wj" 
 {:color 4
  :inputs []
- :label "; ## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing allpass filters."
+ :label "; ## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing [allpass filters](#9)."
  :outputs []
- :parsed [:comment "## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing allpass filters."]
+ :parsed [:comment "## Final Diffusers ##\n\nEcho density can be increased by connecting the parallel echoes into a set of spectrally transparent, density-increasing [allpass filters](#9)."]
  :pos [568 222]
- }
+ :selected true}
  "6t3lwzn34bpdea" 
 {:color 2
  :flip-y true

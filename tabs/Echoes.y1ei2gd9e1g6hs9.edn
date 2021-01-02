@@ -72,12 +72,13 @@
  :pos [-463 -281]
  }
  "78n45d9r82j415b" 
-{:inputs []
+{:color 3
+ :inputs []
  :label ";[Better reverberation](#1) can be had by simply choosing the delay parameters more carefully, as seen on the [Reverb](#1) tab."
  :outputs []
  :parsed [:comment "[Better reverberation](#1) can be had by simply choosing the delay parameters more carefully, as seen on the [Reverb](#1) tab."]
  :pos [120 184]
- :selected true}
+ }
  "95ogosjtx3dqi9y" 
 {:inputs []
  :label "0"
@@ -117,6 +118,14 @@
  :parsed [:invariant "8000"]
  :pos [-398 -83]
  }
+ "drcr009riime1cz" 
+{:color 3
+ :inputs []
+ :label "; By [modulating the delay time](#3), different effects such as [chorus](#3) can be created."
+ :outputs []
+ :parsed [:comment "By [modulating the delay time](#3), different effects such as [chorus](#3) can be created."]
+ :pos [-415 308]
+ :selected true}
  "dzv7rnpu96p68qo" 
 {:ephemeral-inputs #{"set"}
  :inputs ["func" "set" "set..."]
