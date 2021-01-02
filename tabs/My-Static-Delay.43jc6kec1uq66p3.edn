@@ -10,6 +10,7 @@
  ["2ha99ka5ug6jifn" 1] [:fixed "00zca9qt85ja8gn" 0]
  ["38qxk4lq3bwg4fb" 0] [:fixed "2ha99ka5ug6jifn" 0]
  ["38qxk4lq3bwg4fb" 1] [:fixed "c9i0xdm15546sw3" 2]
+ ["bctqp2xafthaomi" 0] [:fixed "vayywn2f9ytbeae" 0]
  ["uvt247wbd8744jl" 0] [:fixed "c9i0xdm15546sw3" 1]
  ["vayywn2f9ytbeae" 0] [:fixed "2ha99ka5ug6jifn" 0]}
  :nodes
@@ -43,6 +44,15 @@
  :parsed [:comment "# Static Delay #\n\n\nA simple delay line can be made by using the `rbuf` primitive, which writes incoming values to a circular buffer, outputting the evicted value at each frame."]
  :pos [196 -229]
  }
+ "bctqp2xafthaomi" 
+{:color 3
+ :inputs ["sig"]
+ :label "o))"
+ :name "play here!"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [290 110]
+ }
  "c9i0xdm15546sw3" 
 {:color 0
  :inputs []
@@ -57,7 +67,7 @@
  :outputs [""]
  :parsed [:fn "Constraints:Constant!" [:tuple [:free-var "a"]]]
  :pos [-202 79]
- :selected true}
+ }
  "vayywn2f9ytbeae" 
 {:inputs ["out"]
  :label "$out"

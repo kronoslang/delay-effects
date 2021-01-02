@@ -1,0 +1,189 @@
+{:identifier "Flanger"
+ :identity "6t91dw9v6elr88n"
+ :patch
+{:cables
+{["2bxwaerged05dvp" 0] [:fixed "ulw4hmeumteo8si" 0]
+ ["2bxwaerged05dvp" 2] [:fixed "6573j12x6pxs50e" 0]
+ ["2bxwaerged05dvp" 3] [:fixed "0r40lfvtjmw2xd4" 0]
+ ["8zaoslg53qaatt9" 0] [:fixed "vah7cymn03job3a" 0]
+ ["axoan9c77so5d6c" 0] [:fixed "xpqebi0scc6ljjt" 0]
+ ["axoan9c77so5d6c" 1] [:fixed "5g2odhryl017bw2" 0]
+ ["bak78ai0z6pd133" 0] [:fixed "d1nwt6j3mpz4g5" 0]
+ ["cvglmavyutdi8hv" 0] [:fixed "5iiduajss8632n6" 0]
+ ["cvglmavyutdi8hv" 1] [:fixed "axoan9c77so5d6c" 0]
+ ["d1nwt6j3mpz4g5" 0] [:fixed "xaxufzgi56cwdvu" 0]
+ ["ixhaxufhv81qr5d" 0] [:fixed "cvglmavyutdi8hv" 0]
+ ["p4d8h1jak02kxht" 0] [:fixed "ulw4hmeumteo8si" 0]
+ ["udva5x5gwjcgd45" 0] [:fixed "p4d8h1jak02kxht" 0]
+ ["udva5x5gwjcgd45" 1] [:fixed "jg9kminhodgmjn8" 0]
+ ["vah7cymn03job3a" 0] [:fixed "udva5x5gwjcgd45" 0]
+ ["vah7cymn03job3a" 1] [:fixed "z1yoir7eud1m50y" 0]
+ ["xaxufzgi56cwdvu" 0] [:fixed "2bxwaerged05dvp" 0]
+ ["xaxufzgi56cwdvu" 1] [:fixed "8zaoslg53qaatt9" 0]
+ ["xpqebi0scc6ljjt" 0] [:fixed "5g2odhryl017bw2" 0]
+ ["z1yoir7eud1m50y" 0] [:fixed "ixhaxufhv81qr5d" 0]}
+ :nodes
+{"0r40lfvtjmw2xd4" 
+{:color 3
+ :inputs []
+ :label "-0.99 .o 0.99"
+ :name "feedback"
+ :outputs [""]
+ :parsed [:widget "28xd9z" 0.5 {:type :dial, :skin :circular, :min [:float "-0.99"], :max [:float "0.99"]}]
+ :pos [-160 -15]
+ }
+ "2bxwaerged05dvp" 
+{:inputs ["sig" "delay" "max" "feedback"]
+ :label "My-Fractional-Delay($sig $delay $max $feedback)"
+ :name "dynamic delay line"
+ :outputs [""]
+ :parsed [:fn "My-Fractional-Delay" [:tuple [:free-var "sig"] [:free-var "delay"] [:free-var "max"] [:free-var "feedback"]]]
+ :pos [88 250]
+ }
+ "2ykcyu27qf5cbfs" 
+{:inputs []
+ :label "; Generate four phase-offset LFOs from index vector"
+ :outputs []
+ :parsed [:comment "Generate four phase-offset LFOs from index vector"]
+ :pos [-87 -231]
+ }
+ "5g2odhryl017bw2" 
+{:inputs []
+ :label "#4"
+ :outputs [""]
+ :parsed [:invariant "4"]
+ :pos [-479 -210]
+ }
+ "5iiduajss8632n6" 
+{:color 3
+ :inputs []
+ :label "0.05 .o 3"
+ :name "modulation rate"
+ :outputs [""]
+ :parsed [:widget "-r57h6t" 0.5 {:type :dial, :skin :circular, :min [:float "0.05"], :max [:float "3"]}]
+ :pos [-360 -69]
+ }
+ "6573j12x6pxs50e" 
+{:inputs []
+ :label "#10000"
+ :outputs [""]
+ :parsed [:invariant "10000"]
+ :pos [-27 169]
+ }
+ "8zaoslg53qaatt9" 
+{:inputs ["v"]
+ :label "Vector:Explode($v)"
+ :outputs [""]
+ :parsed [:fn "Vector:Explode" [:tuple [:free-var "v"]]]
+ :pos [245 76]
+ }
+ "axoan9c77so5d6c" 
+{:inputs ["a" "b" "more..."]
+ :label "/"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
+ :pos [-315 -134]
+ }
+ "bak78ai0z6pd133" 
+{:color 3
+ :inputs ["sig"]
+ :label "o))"
+ :name "play here!"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [566 158]
+ }
+ "cvglmavyutdi8hv" 
+{:inputs ["freq" "offset"]
+ :label "Gen:Sin($freq $offset)"
+ :outputs [""]
+ :parsed [:fn "Gen:Sin" [:tuple [:free-var "freq"] [:free-var "offset"]]]
+ :pos [-208 -88]
+ }
+ "d1nwt6j3mpz4g5" 
+{:ephemeral-inputs #{"numbers"}
+ :inputs ["numbers" "numbers..."]
+ :label "Average($numbers...)"
+ :name "mix"
+ :outputs [""]
+ :parsed [:fn "Average" [:tuple [:free-var "numbers"] [:free-var "numbers..."]]]
+ :pos [440 158]
+ }
+ "iv1d07q0u5qcaa3" 
+{:inputs []
+ :label ";## Modulation Delay ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."
+ :outputs []
+ :parsed [:comment "## Modulation Delay ##\n\n\nCan be used for detuning and thickening sounds.\n\n\nThis example provides a quad chorus by using a 4-vectored LFO to drive [fractional delays](#7)."]
+ :pos [417 -220]
+ }
+ "ixhaxufhv81qr5d" 
+{:inputs ["a"]
+ :label "* 0.5"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:float "0.5"]]
+ :pos [-112 -88]
+ }
+ "jg9kminhodgmjn8" 
+{:color 3
+ :inputs []
+ :label "0.005 .o 0.08"
+ :name "modulation depth"
+ :outputs [""]
+ :parsed [:widget "-ti8i1n" 0.5 {:type :dial, :skin :circular, :min [:float "0.005"], :max [:float "0.08"]}]
+ :pos [-360 55]
+ }
+ "p4d8h1jak02kxht" 
+{:inputs ["sig"]
+ :label "Rate-of($sig)"
+ :outputs [""]
+ :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
+ :pos [-240 179]
+ }
+ "udva5x5gwjcgd45" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-140 119]
+ }
+ "ulw4hmeumteo8si" 
+{:inputs []
+ :label "Sound-Example()"
+ :outputs [""]
+ :parsed [:fn "Sound-Example" [:tuple]]
+ :pos [-446 253]
+ }
+ "vah7cymn03job3a" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :name "delay in samples"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [102 -29]
+ }
+ "xaxufzgi56cwdvu" 
+{:ephemeral-inputs #{"set"}
+ :inputs ["func" "set" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :name "apply delays"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set"] [:free-var "set..."]]]
+ :pos [326 158]
+ }
+ "xpqebi0scc6ljjt" 
+{:inputs ["count"]
+ :label "Vector:Indices($count)"
+ :outputs [""]
+ :parsed [:fn "Vector:Indices" [:tuple [:free-var "count"]]]
+ :pos [-403 -134]
+ }
+ "z1yoir7eud1m50y" 
+{:inputs ["a"]
+ :label "+ 0.51"
+ :name "LFO output to positive values"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "0.51"]]
+ :pos [-2 -88]
+ }}
+ :scale 1
+ :scroll [0 0]}}

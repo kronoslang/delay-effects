@@ -50,7 +50,7 @@
  :label "0 .o 1"
  :name "wet/dry"
  :outputs [""]
- :parsed [:widget "-v4vtd8" 0.385 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
+ :parsed [:widget "-c8lizi" 0.385 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
  :pos [332 337]
  }
  "34s2mchbjm6yqyl" 
@@ -150,6 +150,13 @@
  :parsed [:invariant "1"]
  :pos [-448 -230]
  }
+ "l2p3zv49kbfrko1" 
+{:inputs []
+ :label ";... all reverberation is based on signal delays, which are often implemented as [ring buffers](#4). Dive in and [see how they work](#4) in Veneer!"
+ :outputs []
+ :parsed [:comment "... all reverberation is based on signal delays, which are often implemented as [ring buffers](#4). Dive in and [see how they work](#4) in Veneer!"]
+ :pos [-334 318]
+ }
  "l58mpr7zkpm4gkz" 
 {:color 0
  :inputs []
@@ -173,7 +180,7 @@
  :label "1 .o 8"
  :name "reverb decay time"
  :outputs [""]
- :parsed [:widget "-f2z2ok" 0.6950000000000001 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
+ :parsed [:widget "-vviy9c" 0.6950000000000001 {:type :dial, :skin :circular, :min [:float "1"], :max [:float "8"]}]
  :pos [-610 -90]
  }
  "nfmc9v34pcaa9cz" 
@@ -185,12 +192,13 @@
  :pos [210 231]
  }
  "q05ywu554huo0z1" 
-{:color 4
+{:color 3
  :inputs ["sig"]
  :label "o))"
+ :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [608 350]
+ :pos [549 350]
  }
  "smp5mky8p45fkkm" 
 {:color 2
@@ -205,7 +213,7 @@
  :label "Math:Mix($mix $a $b)"
  :outputs [""]
  :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
- :pos [503 352]
+ :pos [444 352]
  }
  "twk95x5rv8jf9xz" 
 {:color 2

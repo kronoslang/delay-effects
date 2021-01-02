@@ -9,8 +9,6 @@ Brief() {
 ;; Various delay effects in the Kronos language explained in detail, using static and dynamic delays to produce echo, reverb, vibrato, chorus and flanger.
  nil
 }
-
-
 Echoes() {
 (nnloqgm0p14lm1rx-0) = (delay) => ( My-Static-Delay(ncwz5tcyqgpb0dyl-0 delay n9dbg51533owz15e-0) ) 
 (ndzv7rnpu96p68qo-0) = Algorithm:Map(nnloqgm0p14lm1rx-0 n0x0i10khlqtfawj-0 )
@@ -81,6 +79,29 @@ FDN() {
 nq05ywu554huo0z1-0
 }
 
+Flanger() {
+(np4d8h1jak02kxht-0) = Rate-of(nulw4hmeumteo8si-0)
+(nz1yoir7eud1m50y-0) = (nixhaxufhv81qr5d-0 + 0.51)
+(n0r40lfvtjmw2xd4-0) = 0.5
+(n5g2odhryl017bw2-0) = #4
+(n2bxwaerged05dvp-0) = (delay) => ( My-Fractional-Delay(nulw4hmeumteo8si-0 delay n6573j12x6pxs50e-0 n0r40lfvtjmw2xd4-0) ) 
+(nxpqebi0scc6ljjt-0) = Vector:Indices(n5g2odhryl017bw2-0)
+(nvah7cymn03job3a-0) = (nudva5x5gwjcgd45-0 * nz1yoir7eud1m50y-0)
+(nudva5x5gwjcgd45-0) = (np4d8h1jak02kxht-0 * njg9kminhodgmjn8-0)
+(nbak78ai0z6pd133-0) = nd1nwt6j3mpz4g5-0
+(nd1nwt6j3mpz4g5-0) = Average(nxaxufzgi56cwdvu-0 )
+(nulw4hmeumteo8si-0) = Sound-Example()
+(n5iiduajss8632n6-0) = 0.5
+(n8zaoslg53qaatt9-0) = Vector:Explode(nvah7cymn03job3a-0)
+(nxaxufzgi56cwdvu-0) = Algorithm:Map(n2bxwaerged05dvp-0 n8zaoslg53qaatt9-0 )
+(njg9kminhodgmjn8-0) = 0.5
+(nixhaxufhv81qr5d-0) = (ncvglmavyutdi8hv-0 * 0.5)
+(ncvglmavyutdi8hv-0) = Gen:Sin(n5iiduajss8632n6-0 naxoan9c77so5d6c-0)
+(naxoan9c77so5d6c-0) = (nxpqebi0scc6ljjt-0 / n5g2odhryl017bw2-0)
+(n6573j12x6pxs50e-0) = #10000
+nbak78ai0z6pd133-0
+}
+
 Ringbuffer() {
 (ndpo53heusba2ail-0) = 0
 (nq7oji0v5y41l1be-0) = #10
@@ -95,12 +116,13 @@ n3vj0tqsv6cl03m3-0
 My-Static-Delay(sig delay feedback) {
 ;; Delays `sig` by a number of activation `frames`. The output is fed back and added to the input, multiplied by the `feedback` coefficient.
 (n00zca9qt85ja8gn-0) = (nc9i0xdm15546sw3-0 + n38qxk4lq3bwg4fb-0)
-(n2ha99ka5ug6jifn-0) = rbuf(nuvt247wbd8744jl-0 n00zca9qt85ja8gn-0)
 (n38qxk4lq3bwg4fb-0) = (n2ha99ka5ug6jifn-0 * nc9i0xdm15546sw3-2)
+(nbctqp2xafthaomi-0) = nvayywn2f9ytbeae-0
+(n2ha99ka5ug6jifn-0) = rbuf(nuvt247wbd8744jl-0 n00zca9qt85ja8gn-0)
+(nvayywn2f9ytbeae-0) = n2ha99ka5ug6jifn-0
 (nc9i0xdm15546sw3-0 nc9i0xdm15546sw3-1 nc9i0xdm15546sw3-2) = arg
 (nuvt247wbd8744jl-0) = Constraints:Constant!(nc9i0xdm15546sw3-1)
-(nvayywn2f9ytbeae-0) = n2ha99ka5ug6jifn-0
-nvayywn2f9ytbeae-0
+nbctqp2xafthaomi-0
 }
 
 My-Dynamic-Delay(sig delay max feedback) {
