@@ -49,14 +49,14 @@ n0u0zlmq4ek0px-0
 }
 
 FDN() {
-(n32ygb5oaejwf5ho-0) = 0.385
+(n32ygb5oaejwf5ho-0) = 0.26499999999999996
 (nbds9p5oq0r174ju-0) = Rate-of(nl58mpr7zkpm4gkz-0)
 (nmtojgcvjw8jacnx-0) = (njeqnini0usdqhk1-0 / ntwk95x5rv8jf9xz-0)
 (nnfmc9v34pcaa9cz-0) = FWT(n4k699j91ewvl5s-0)
 (nxc85ro1mr70n372-0) = 0
 (nsuni3o8jhiq8llj-0) = Math:Mix(n32ygb5oaejwf5ho-0 nl58mpr7zkpm4gkz-0 n8abv50an51k174c-0)
 (nuj190pnbk3lwyqg-0) = (nn792l6t7u35kws3-0 * nbds9p5oq0r174ju-0)
-(nn792l6t7u35kws3-0) = 0.6950000000000001
+(nn792l6t7u35kws3-0) = 0.56
 (nl58mpr7zkpm4gkz-0) = Sound-Example()
 (nsmp5mky8p45fkkm-0) = (a) => ( (a * n2d24d5vt8xylw1-0) ) 
 (nuvyh3nz45wxdqrh-0) = z-1(ny5p1yuiv9mm2944-0 nnfmc9v34pcaa9cz-0)
